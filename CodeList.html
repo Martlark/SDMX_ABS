@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+        <title>Code List #objectid#</title>
+        <!--#head.html#-->
+        <script>
+            dojo.ready(function()
+            {
+                prototypeExtensions();
+                dojo.byId("content").value = "";
+                setup_codelist_grid();
+                call_codelist_ws();
+            });
+
+        </script>
+    </head>
+
+    <body style="claro">
+        <!--#navigation.html#-->
+        <br/>
+        <label for='objectid'>Code List ID: </label><input type='text' id='objectid' value='#objectid#'/>
+        <input type="button" value="Lookup" onclick="call_codelist_ws();" />
+        <br/>
+        <span id="status"></span>
+        <br/>
+        <textarea id="content" class='bigbox' style='display:none'></textarea>
+        <div id='results'>Querying results.  Please wait...</div>
+        <label for='codeFilter' >Code Filter</label><input type='text' id='codeFilter'
+                                                           oninput="gridFilter( {input:this, grid:grid, column:'code'} );"/>
+        <label for='descriptionFilter' >Description Filter</label><input type='text' id='descriptionFilter'
+                                                                         oninput="gridFilter( {input:this, grid:grid, column:'description'} );"/>
+        <div id='grid' class='resultsGrid'></div>
+    </body>
+</html>

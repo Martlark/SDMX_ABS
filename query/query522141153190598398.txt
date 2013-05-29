@@ -1,0 +1,8 @@
+title=NRP7 - National Regional Profiles.
+name=NRP Unemployment Income and Population by State.
+random={3}
+method=create
+query0={"qAnd":[{"c":"DATAITEM","v":"20"},{"c":"FREQUENCY","v":"A"}],"qOr":[{"c":"ASGC_2008","v":"1,2,3,4,5,6,7,8"}],"startTime":"2000-05-22","endTime":"2009-10-01","dataSetId":"NRP7","measure":"Value","frequency":"Annual"}
+query1={"qAnd":[{"c":"DATAITEM","v":"6"},{"c":"FREQUENCY","v":"A"}],"qOr":[{"c":"ASGC_2008","v":"1,2,3,4,5,6,7,8"}],"startTime":"2000-05-22","endTime":"2009-10-01","dataSetId":"NRP7","measure":"Value","frequency":"Annual"}
+query2={"qAnd":[{"c":"DATAITEM","v":"271"},{"c":"FREQUENCY","v":"A"}],"qOr":[{"c":"ASGC_2008","v":"1,2,3,4,5,6,7,8"}],"startTime":"2000-05-22","endTime":"2009-10-01","dataSetId":"NRP7","measure":"Value","frequency":"Annual"}
+options={"breakField":"ASGC_2008","mapLayerId":"None","perCapita":false,"chartOptions":{"xAxis":"0","yAxis":"1","bubble":"2","title0":"Unemployment rate","title1":"Income","title2":"Population"}}

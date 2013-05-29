@@ -1,0 +1,204 @@
+@import url("http://ajax.googleapis.com/ajax/libs/dojo/1.8/dojo/resources/dojo.css");
+@import url("http://ajax.googleapis.com/ajax/libs/dojo/1.8/dijit/themes/claro/claro.css");
+@import url("http://ajax.googleapis.com/ajax/libs/dojo/1.8/dojox/grid/resources/claroGrid.css");
+
+.categorySchemeHidden {
+    display: none;
+}
+
+.hideOnLoad {
+    display: none;
+}
+
+.dataflowHeader{
+}
+.listHeader{
+}
+.conceptHeader{
+}
+
+.bigbox {
+    width: 100%; height: 350px;}
+
+#status { font-size: 12px; }
+
+ul#navlist
+{
+    margin-left: 0;
+    padding-left: 0;
+    white-space: nowrap;
+}
+
+#navlist li
+{
+    display: inline;
+    list-style-type: none;
+}
+
+#navlist a { padding: 15px 20px; }
+
+#navlist a:link, #navlist a:visited
+{
+    color: #fff;
+    background-color: #036;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navlist a:hover
+{
+    color: #fff;
+    background-color: #369;
+    text-decoration: none;
+}
+
+/* responsive web stuff */
+
+body {
+    background-color: peachpuff;
+    line-height: 25px;
+    color: black;
+}
+
+a {
+    color: blue; font-style: italic;
+}
+a:hover {
+    color: blueviolet;
+}
+
+header a, h2 a {
+    color: #999; font-style: normal; text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav hr {
+	display:block;
+	clear:both;
+}
+	
+header nav li {
+    float: left; 
+    font-size: 12px;
+    margin: 0 0 0.5em 0.5em;
+    border-right: 1px solid #aaa;
+    padding: 0 0.5em;
+}
+
+.homeTitle {
+    float: left; font-size: 36px;
+    font-weight: normal;
+    padding: 0 1em 1em 1em;
+}
+
+#footer-container {
+    background: rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+footer {
+    width: 910px; margin: 0 auto; padding: 10px 20px 50px 20px;
+}
+footer #credits {
+    list-style: none; float: left;
+}
+footer #credits li {
+    float: left; margin: 0 5px 0 0;
+}
+
+footer #back-top {
+    float: right; font-size: 12px;
+}
+
+/* the spinner thing */
+
+.executing {
+
+}
+
+.saveQuery {
+
+}
+
+.saveName {
+    width: 20em;
+}
+
+/* classes used in mapResult.html */
+
+h2 {
+    margin: 0;
+}
+
+.mapMainTable {
+    width: 650px;
+    float: left;
+}
+
+td.mapMainTable{
+    vertical-align: top;
+}
+
+.mapKey {
+    float:left;
+    width:50px
+}
+
+.mapMap {
+    float:left;
+    height:650px;
+    width:600px
+}
+
+.mapTimeLine{
+    float:left;
+    width:600px;
+    height:700px;
+    margin-left: 1em;
+}
+#slider {
+    width:100%;
+}
+.mapChart{
+    height:500px;
+    width: 100%;
+}
+
+.mapFooter {
+    float:left;
+    width:1000px;
+    height:1000px;
+    margin-top: 12em;
+}
+.exploreInformation
+{
+    float:left;
+    width:50%;
+    height:1000px;
+    margin-top: 12em;
+}
+.homeGrid {
+    height:30em;
+}
+
+.queryTabcontainer {
+	width: 100%; 
+	height: 40em; 
+}
+
+#visualisation {
+	height: 700px;
+}
+
+.mapResultsGrid {
+	float: left;
+	width: 100%;
+	height: 700px;
+}
+
+.chartMoveButton {
+	float:left;
+	color:green;
+}

@@ -1,0 +1,6 @@
+title=Capital city established house price movements quarter to quarter
+name=Capital city established house price movements quarter to quarter
+random={3}
+method=create
+query0={"qAnd":[{"c":"MEASURE","v":"2"},{"c":"INDEX","v":"1"},{"c":"FREQUENCY","v":"Q"}],"qOr":[{"c":"REGION","v":"1,2,3,4,5,6,7,8"}],"startTime":"2008-05-17","endTime":"","dataSetId":"HOUSE_PRICE_INDEXES","measure":"Percentage change (from previous quarter)","frequency":"Quarterly"}
+options={"breakField":"REGION","mapLayerId":"STE_CODE","perCapita":false,"map":true}

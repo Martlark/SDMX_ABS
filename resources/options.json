@@ -1,0 +1,45 @@
+{
+    "activeVersion":"4",
+	"name": "ABS .stat development service configuration for use with jsp server",
+	"proxy": "proxy.php",
+	"r": "r.php",
+	"query": "query.php",
+	"title": "ABS SDMX",
+	"breakField": "REF_AREA",
+	"descriptionTemplate" : "chartDescription.template",
+	
+	"ws_prod_url" : "http://stat/sdmxws/sdmx.asmx",
+	"dev_ws_url" : "http://wigglytuff/sdmxws/sdmx.asmx",
+    "ws_url" : "http://stat.abs.gov.au/sdmxws/sdmx.asmx",
+	"ws_internal_url" : "http://stat.corp.abs.gov.au/sdmxws/sdmx.asmx",
+	
+	"ws_header" : "<soap:Envelope xmlns:soap='http://www.w3.org/2003/05/soap-envelope' xmlns:sdmx='http://stats.oecd.org/OECDStatWS/SDMX/'><soap:Header/><soap:Body>",
+    "ws_footer" : "</soap:Body></soap:Envelope>",
+    "ws_query_header" : "<sdmx:QueryMessage><message:QueryMessage xmlns='http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query' xmlns:message='http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message' xsi:schemaLocation='http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query http://www.sdmx.org/docs/2_0/SDMXQuery.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://www.sdmx.org/docs/2_0/SDMXMessage.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'><Header xmlns='http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message'><Receiver id='ABS'/></Header>",
+    "ws_query_footer" : "</message:QueryMessage></sdmx:QueryMessage>",
+	
+	"ws_categoryScheme" : "<message:Query><KeyFamilyWhere><Or></Or></KeyFamilyWhere></message:Query>",
+	"ws_categoryScheme_method" : "GetDataStructureDefinition",
+	
+	"ws_dataFlowScheme" : "<message:Query><KeyFamilyWhere><Or><KeyFamily>{0}</KeyFamily></Or></KeyFamilyWhere></message:Query>",
+	"ws_dataFlowScheme_method" : "GetDataStructureDefinition",
+	"dataflow_constraint_column" : "constraint",	
+	
+	"ws_soap_reply_start" : "<soap:",	
+	
+	"ws_query_dataflow_header" : "<message:Query><DataWhere xmlns='http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query'>",
+	"ws_query_dataflow" : "DataSet",
+	"ws_query_dataflow_footer" : "</DataWhere></message:Query>",
+	
+	"defaultExploreLayerId" : "STE_CODE",
+	"map_extent" : {
+		"xmin" : -28161357.91095103,
+	    "ymin" : -7874958.919267823,
+	    "xmax" : -22390994.13865105,
+	    "ymax" : -1016201.184917851, 
+	    "spatialReference": {"wkid": 102100}
+	    },
+	    
+	"minHeatMapColor" : "white",
+    "maxHeatMapColor" : "purple"
+}

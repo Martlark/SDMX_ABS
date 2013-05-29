@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><!--#title.html#-->Explore Data</title>
+		<!--#maphead.html#-->
+        <script src="explore.js"></script>
+        <script>
+			dojo.ready(function() {
+				initExplore();
+			});
+        </script>
+    </head>
+
+    <body class="claro" >
+		<!--#navigation.html#-->
+        <h1><!--#title.html#-->Explore Data</h1>
+
+        <!-- next for divs will be float:left by css -->
+
+        <div>
+            <div class='mapMainTable'>
+
+                <div class='mapMap' id="map"></div>
+
+            </div>
+
+            <div class='mapTimeLine'>
+                <label for='mapLayers'>Map layer: </label><input id="mapLayers">
+                <h1>Available Data Queries</h1>
+                <input type='button' id='showQuery' value='Show' onclick='showTableQuery();'/>
+                <div id='dataQueries'></div>
+            </div>
+            
+            <div class='exploreInformation'>
+                <h1>Selected Information for <span id='primaryArea'>[click on area to select]</span></h1>
+                <div id='primaryInformation'></div>
+            </div>
+            
+            <div class='exploreInformation'>
+                <h1>Information for <span id='currentArea'></span></h1>
+                <div id='currentInformation'></div>
+            </div>
+            
+        </div>
+    </body>
+
+</html>
+

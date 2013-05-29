@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+  <!--The viewport meta tag is used to improve the presentation and behavior of the samples
+    on iOS devices-->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="pages.css">
+	<title>Stored Queries</title>
+
+	<script>var dojoConfig = { isDebug: true };</script>
+	<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/"></script>
+	<script type="text/javascript" src="jssaxparser/sax.js"></script>
+	<script type="text/javascript" src="jssaxparser/DefaultHandlers.js"></script>
+	<script src="index.js"></script>
+	<script src="pages.js"></script>
+	<script>
+    dojo.require("dojox.xml.parser");
+
+    dojo.ready(function() 
+	{
+		prototypeExtensions();
+    });
+	</script>
+</head>
+<body style="font-family: Arial Unicode MS,Arial,sans-serif;">
+  <p>
+    Stored Queries
+  </p>
+  <p>
+    <input type="button" value="Query CPI" onclick="call_stored_cpi();" />
+  </p>
+</body>
+</html>

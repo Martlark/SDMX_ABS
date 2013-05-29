@@ -1,0 +1,4 @@
+This chart shows {dataCount} items. The average is {averageValue}, with {minName} having the minimum of {minValue}, and {maxName} having the largest of {maxValue}. Standard deviation is {stdDeviation}.
+{if {stdDeviationList}}Significant deviations from the average of items are:
+{stdDeviationList}{endif {stdDeviationList}}
+{if {previousName}}Largest change from previous period was {previousName} which went from {previousPrev} in {previousPeriod} to {previousValue}, a difference of {previousDiff}.{endif {previousName}}

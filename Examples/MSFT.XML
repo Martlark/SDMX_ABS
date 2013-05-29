@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!-- http://www.webservicex.net/stockquote.asmx?op=GetQuote -->
+ <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <GetQuote xmlns="http://www.webserviceX.NET/"> 
+       <symbol>MSFT</symbol> 
+     </GetQuote> 
+   </soap:Body> 
+ </soap:Envelope>
+ 
+ response:
+ 
+ <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<soap:Body>
+<GetQuoteResponse xmlns="http://www.webserviceX.NET/">
+<GetQuoteResult>
+<StockQuotes><Stock><Symbol>IBM</Symbol><Last>201.02</Last><Date>2/6/2013</Date><Time>4:01pm</Time><Change>-0.92</Change><Open>200.39</Open><High>201.29</High><Low>199.56</Low><Volume>3624203</Volume><MktCap>225.1B</MktCap><PreviousClose>201.94</PreviousClose><PercentageChange>-0.46%</PercentageChange><AnnRange>181.85 - 211.79</AnnRange><Earns>14.37</Earns><P-E>14.05</P-E><Name>International Bus</Name></Stock></StockQuotes>
+</GetQuoteResult>
+</GetQuoteResponse>
+</soap:Body>
+</soap:Envelope>

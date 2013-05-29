@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>    
+    <script type='text/javascript'>     
+      google.load('visualization', '1', {'packages': ['geochart']});
+    </script>
+  	<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8"/>
+    <script>
+      function redrawTable(){
+        var countries = {};
+        var url = $('#url').val();
+        var filter = Number($('#filter').val())*1000;
+      	var jsonDiv = $('#table');
+      
+        $.ajax(
+          {  type: "GET",  url: url,  dataType: "script", success: makeTable, error: ooopsy }
+        );
+        
+        function ooopsy(jqXHR, textStatus, errorThrown){
+        	  jsonDiv.text( 'data could not be retrieved: ' + errorThrown );
+        }
+        
+        function makeTable(){
+        	var dataTable = [['Country', 'Population', 'Region']];
+        	jsonDiv.text('');
+        	
+        	if( typeof( countriesJSON ) == 'undefined' ){
+        	  jsonDiv.innerHTML = 'data could not be retrieved';
+        	  return;
+        	}
+        	
+        	var minPop  = 0, maxPop = 0;
+
+        	for( var t in countriesJSON.countries ){
+        		var c = countriesJSON.countries[t];
+        		if( Number(c.population)>filter ){
+        		   minPop = Math.min( Number(c.population), minPop );
+        		   maxPop = Math.max( Number(c.population), maxPop );
+            }
+          }
+        	var rangePop = (maxPop - minPop)/5;
+        	var tiers = [];
+        	for( var x = 0; x < 5; x++ ){
+        	  tiers[x] = minPop + ( x * rangePop );
+        	  console.log( x + ' ' + tiers[x] );
+        	}
+        	var s = '<table class="cTable"><thead><tr><th>ISO Code</th><th>Country</th><th>Population (thousands)</th></tr></thead>';
+        	var countryCount = 0;
+        	
+        	for( var t in countriesJSON.countries ){
+        		var c = countriesJSON.countries[t];
+        		if( Number(c.population)>filter ){
+          		s += '<tr><td>' + c.isoCode + '</td><td>' + c.name + '</td><td>' + c.population + '</td></tr>';
+          		countryCount++;
+          		var cpop = Number( c.population );
+          		var tier = 0;
+          		
+          		for( x = 4; x > 0; x-- ){
+          		  console.log( x + ': ' + cpop + ' tier:' + tiers[x] );
+          		  if( cpop > tiers[x] ){
+          		    tier = x;
+          		    break;
+          		  }
+          		}
+          		dataTable.push( [c.isoCode, cpop, tier] );
+          	}
+        	}
+        	s+= '</table>';
+        	
+        	jsonDiv.append(s);
+        	
+        	$('p span').text('Found ' + countryCount + ' countries with population > ' + $('#filter').val() + ' million' );
+        	$("tr:even").css("background-color", "yellow");
+        	
+          drawRegionsMap( dataTable );
+
+        }
+      }
+
+/*
+      [          
+        ['Country', 'Popularity'],          
+        ['Germany', 200],...]
+*/
+      
+      function drawRegionsMap(dataTable) {        
+        var data = google.visualization.arrayToDataTable(dataTable);       
+        var options = {colorAxis: {colors: ['green', 'blue']}};        
+        var chart = new google.visualization.GeoChart(document.getElementById('map'));        
+        
+        chart.draw(data, options);
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <input type='text' id='url' value='countries.json'/>
+    <lable for='filter'>Filter value</label><input type='text' id='filter' value='50'/>
+  	<input type='button' onclick='redrawTable();' value='Table' />
+  	<p>The Data <span></span>.</p>
+    <div id='map' style='width:500px;height:300px'></div>
+    <div id='table'></div>
+  </body>
+</html>
+	

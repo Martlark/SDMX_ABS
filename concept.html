@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><!--#title.html#--> concept #objectid#</title>
+	<!--#head.html#-->
+	<script>
+    dojo.ready(function() 
+	{
+		call_concept_ws();
+    });
+	</script>
+</head>
+
+<body class="claro">
+  <p>
+    <label for='dataflowid'>Concept ID</label><input type='text' id='objectid' value='#objectid#'></input>
+    <input type="button" value="Lookup" onclick="call_concept_ws();" />
+    <span id="status"></span>
+  </p>
+  <p>Results:
+    <textarea id="content" class='bigbox'></textarea>
+	<div id='results'>Querying results. Please wait...</div>
+  </p>
+</body>
+</html>

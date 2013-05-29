@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage Cache</title>
+        <!--#head.html#-->
+	<script src='localStorage.js'></script>
+        <script>
+			dojo.ready(function() {
+				init_localStorage();
+			});
+		</script>
+    </head>
+    <body class="claro">
+		<!--#navigation.html#-->
+
+		<h1>Local Storage Cache. <span id="foundCount"></span></h1>
+		<input type="button" value="Refresh" onclick="localStorageSetStore(dijit.byId('localStorageTable'));" />
+		<input type="button" value="Clear local storage cache" onclick="clearLocalStorage();" />
+		<input type="button" value="Delete Selected" onclick="deleteLocalStorageEntry();" />
+
+		<div id="localStorageTable"></div>
+	</body>
+</html>

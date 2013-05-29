@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" /> 
+    <!--The viewport meta tag is used to improve the presentation and behavior of the samples on iOS devices--> 
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/> 
+    <title>MDS Imagery</title> 
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.7/js/dojo/dijit/themes/claro/claro.css"> 
+    <style>
+    	html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+    	#map{padding:0;}
+    </style> 
+    <script type="text/javascript">var djConfig = {parseOnLoad: true};</script> 
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=2.7"></script> 
+    <script type="text/javascript">
+    	dojo.require("dijit.layout.BorderContainer");
+    	dojo.require("dijit.layout.ContentPane");
+    	dojo.require("esri.map");
+    	
+    	// MDSTileMapServiceLayer - custom layer building on the standard ESRI TiledMapServiceLayer class
+	// to consume tiles from the MDS Foundation Map tile servers.
+	//
+	// Parameters for the class are:-
+	//
+	// URLLIST - a string of comma separated tile server stub urls. A single url can be passed, but if multiple
+	// alternate tile server urls are supplied, the layer will randomise usage of each of them
+	//
+	// INITEXT - an esri.geometry.Extent type object specifying the initial extent of the layer
+	// 
+	// FULLEXT - an esri.geometry.Extent type object specifying the initial extent of the layer
+	
+	dojo.declare("MDSTiledMapServiceLayer", esri.layers.TiledMapServiceLayer, {
+		constructor: function(urllist, initext, fullext) {
+			baseurl:"";
+			initext:"";
+			fullext:"";
+			urllist:"";
+			this.urllist = urllist;
+			this.initext = initext;
+			this.fullext = fullext;
+			this.spatialReference = new esri.SpatialReference({
+				"wkid": 102113
+			});
+		
+		//layer provides tile info
+		this.tileInfo = new esri.layers.TileInfo({
+			"rows": 256,
+			"cols": 256,
+			"dpi": 96,
+			"format": "PNG8",
+			"compressionQuality": 0,
+			"origin": {
+				"x": -20037508.342787,
+				"y": 20037508.342787
+			},
+			"spatialReference": {
+				"wkid": 102113
+			},
+			"lods": [{
+				"level": 3,
+				"scale": 73957190.948944,
+				"resolution": 19567.8792409999
+			}, {
+				"level": 4,
+				"scale": 36978595.474472,
+				"resolution": 9783.93962049996
+			}, {
+				"level": 5,
+				"scale": 18489297.737236,
+				"resolution": 4891.96981024998
+			}, {
+				"level": 6,
+				"scale": 9244648.868618,
+				"resolution": 2445.98490512499
+			}, {
+				"level": 7,
+				"scale": 4622324.434309,
+				"resolution": 1222.99245256249
+			}, {
+				"level": 8,
+				"scale": 2311162.217155,
+				"resolution": 611.49622628138
+			}, {
+				"level": 9,
+				"scale": 1155581.108577,
+				"resolution": 305.748113140558
+			}, {
+				"level": 10,
+				"scale": 577790.554289,
+				"resolution": 152.874056570411
+			}, {
+				"level": 11,
+				"scale": 288895.277144,
+				"resolution": 76.4370282850732
+			}, {
+				"level": 12,
+				"scale": 144447.638572,
+				"resolution": 38.2185141425366
+			}, {
+				"level": 13,
+				"scale": 72223.819286,
+				"resolution": 19.1092570712683
+			}, {
+				"level": 14,
+				"scale": 36111.909643,
+				"resolution": 9.55462853563415
+			}, {
+				"level": 15,
+				"scale": 18055.954822,
+				"resolution": 4.77731426794937
+			}, {
+				"level": 16,
+				"scale": 9027.977411,
+				"resolution": 2.38865713397468
+			}, {
+				"level": 17,
+				"scale": 4513.988705,
+				"resolution": 1.19432856685505
+			}, {
+				"level": 18,
+				"scale": 2256.994353,
+				"resolution": 0.597164283559817
+			}]
+		});
+	
+		// Inital and full extent provided in constructor
+		this.initialExtent = this.initext;
+		this.fullExtent = this.fullext
+	},
+		InitLayer: function() {
+			this.loaded = true;
+			this.onLoad(this);
+			return this; //for chaining
+		},
+		getTileUrl: function(level, row, column) {
+			// Access MDS tiles using level, column and row parameters
+			return this.getTileServerBaseUrl(this.urllist) + "/" + level + "/" + column + "/" + row;
+		},
+		getTileServerBaseUrl: function(urls) {
+			// Determine which tile server URL stub to use from supplied list
+			var urlarray = urls.split(",");
+			var urlcount = urlarray.length;
+			var tileserverid = Math.floor(Math.random()*urlcount+1) - 1
+			return urlarray[tileserverid];
+		}
+	});
+	
+	var map;
+	
+	function init() {
+		var initExtent = new esri.geometry.Extent(12042000, -5619000, 17795000, -952000, new esri.SpatialReference({wkid:102100}));	//Initial extent set to Australia
+		var fullExtent = new esri.geometry.Extent(-24978228.99, -20035316.9, 24922286.709, 22041259.18, new esri.SpatialReference({wkid:102100}));	//Whole world extent
+		map = new esri.Map("map",{extent:initExtent});
+		
+		var MDS = MDSTiledMapServiceLayer("http://t1.nowwhere.com.au/18,http://t2.nowwhere.com.au/18,http://t3.nowwhere.com.au/18,http://t4.nowwhere.com.au/18", initExtent, fullExtent).InitLayer();
+		map.addLayer(MDS);
+	}
+	
+	dojo.addOnLoad(init);
+    </script> 
+  </head> 
+   
+  <body class="claro"> 
+    <div dojotype="dijit.layout.BorderContainer" design="headline" gutters="false" style="width: 100%; height: 100%; margin: 0;"> 
+      <div id="map" dojotype="dijit.layout.ContentPane" region="center" style="overflow:hidden;"></div> 
+    </div> 
+  </body> 
+ 
+</html>

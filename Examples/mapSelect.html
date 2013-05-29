@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.8/dijit/themes/claro/claro.css">
+	
+<script>dojoConfig = {parseOnLoad: true}</script>
+<script src='http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dojo/dojo.js'></script>
+<script>
+dojo.require("dojo.data.ObjectStore");
+dojo.require("dojo.store.Memory");
+dojo.require('dojo.parser');
+dojo.require('dijit.form.Select');
+
+// populate the map selection 
+dojo.ready(function() {
+	var xmlhttp, mapLayers = {}, maps = [];
+
+    try {	
+    	xmlhttp = new XMLHttpRequest();
+    	xmlhttp.open('GET', '../resources/mapLayers.json?', false);
+    	xmlhttp.send();
+    
+    	mapLayers = JSON.parse(xmlhttp.responseText);
+    	
+	    for( var m in mapLayers.layers ){
+	    	maps.push( {label:mapLayers.layers[m].name, id:mapLayers.layers[m].id });
+	    }
+		var store = new dojo.store.Memory({ data: maps });
+		var select = new dijit.form.Select({
+			store: new dojo.data.ObjectStore({objectStore: store})}, "mapLayers");
+		select.startup();
+		select.on("change", function(){ console.log('change '+ this.get('value'))});
+    } catch( err ){
+        alert( 'mapLayers.json not specified correctly:' +  err.message );
+    }
+});
+    
+</script>
+</head>
+<body class="claro">
+    <label for="mapLayers">Select maps:</label>
+	<div id='mapLayers'></div>
+</body>
+</html>

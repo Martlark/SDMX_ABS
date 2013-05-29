@@ -1,0 +1,31 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:sdmx="http://stats.oecd.org/OECDStatWS/SDMX/">
+	<soap:Body>
+		<GetDatasetMetadata xmlns="http://stats.oecd.org/OECDStatWS/SDMX/">
+			<QueryMessage>
+<message:GenericMetadataQuery
+xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" 
+xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" 
+xmlns:query="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query" 
+xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query SDMXQueryMetadata.xsd
+http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message SDMXMessage.xsd">   
+<message:Header>
+	<message:Receiver id="ABS"/>
+</message:Header>
+<message:Query>
+	<query:ReturnDetails/>
+	<query:MetadataParameters>
+		<query:AttachedDataSet>
+			<common:DataProvider>
+				<Ref id="ABS" maintainableParentID="" agencyID="ABS"/>
+			</common:DataProvider>
+			<common:ID>CPI</common:ID>
+		</query:AttachedDataSet>		
+	</query:MetadataParameters>
+</message:Query>		
+</message:GenericMetadataQuery>
+			</QueryMessage>
+		</GetDatasetMetadata>
+	</soap:Body>
+</soap:Envelope>

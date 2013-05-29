@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SDMX Query <!--#title.html#--></title>
+        <!--#head.html#-->
+        <script>
+            dojo.ready(function() {
+                init_home();
+            });
+
+        </script>
+    </head>
+    <body class="claro">
+        <!--#navigation.html#-->
+        <h1 class='homeTitle'>SDMX Query <!--#title.html#--></h1>
+        <br style='clear: both'/>
+
+        <div id='homeNav'>
+            <ul id='navlist'>
+                <li>
+                    <a href='rpage?concepts.html'>Explore Concepts and data flows</a>
+                </li>
+                <li>
+                    <a href='rpage?CodeListExplorer.html'>Explore Code Lists and Classifications</a>
+                </li>
+            </ul>
+        </div>
+        <h1>Standard Queries</h1><input type='button' onclick='showHomeGrid();' value ='Show'/><input type='button' value='Refresh'onclick="refreshHomeGrid();"/>
+        <div class='homeGrid'>
+            <div id="grid"></div>
+        </div>
+        <h1>Administration stuff</h1>
+        <a href='rpage?query/savedQueries.html'>Stored Queries</a>
+        <br/>
+        <a href='rpage?localStorage.html'>Local Storage Cache</a>
+    </body>
+</html>

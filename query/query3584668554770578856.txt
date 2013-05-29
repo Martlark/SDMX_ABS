@@ -1,0 +1,6 @@
+title=CPI - Consumer Price Index (CPI) 16th Series by INDEX. 
+name=CPI - By sector
+random={3}
+method=create
+query0={"qAnd":[{"c":"MEASURE","v":"2"},{"c":"REGION","v":"50"},{"c":"TSEST","v":"10"},{"c":"FREQUENCY","v":"Q"}],"qOr":[{"c":"INDEX","v":"20001,20006,20002,20003,20004,20005"}],"startTime":"2008-05-23","endTime":"","dataSetId":"CPI","measure":"Percentage Change from Previous Period","frequency":"Quarterly"}
+options={"breakField":"INDEX","mapLayerId":"None","perCapita":false}

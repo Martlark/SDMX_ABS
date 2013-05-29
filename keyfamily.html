@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+	<!--The viewport meta tag is used to improve the presentation and behavior of the samples
+	on iOS devices-->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+	<title>SDMX keyfamily #objectid#</title>
+
+	<link rel="stylesheet" type="text/css" href="pages.css">
+
+	<script>var dojoConfig = { isDebug: true };</script>
+	<script src="//ajax.googleapis.com/ajax/libs/dojo/1.8.3/dojo/dojo.js"></script>
+	<script type="text/javascript" src="jssaxparser/sax.js"></script>
+	<script type="text/javascript" src="jssaxparser/DefaultHandlers.js"></script>
+	<script src="index.js"></script>
+	<script src="pages.js"></script>
+	<script>
+    dojo.require("dojox.xml.parser");
+
+    dojo.ready(function() {
+		prototypeExtensions();
+		dojo.byId("content").value = "";
+		call_keyfamily_ws();
+    });
+	</script>
+</head>
+
+<body>
+	<p>
+		<label for='dataflowid'>Key Family ID</label><input type='text' id='objectid' value='#objectid#'></input>
+		<input type="button" value="Lookup" onclick="call_keyfamily_ws();" />
+		<br/>
+		<span id="status"></span>
+	</p>
+	<textarea id="content" style='display:none' class='bigbox'></textarea>
+	<div id='results'>Querying results.  Please wait...</div>
+</body>
+</html>

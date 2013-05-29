@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Body>
+    <ns3:GetGenericDataResponse xmlns:ns2="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:ns3="http://webservices.sdw.ecb/" xmlns:ns4="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:ns5="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/metadatareport" xmlns:ns6="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:ns7="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata" xmlns:ns8="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:ns9="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:ns10="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:ns11="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/utility" xmlns:ns12="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:ns13="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry">
+      <ns4:MessageGroup>
+        <ns4:Header>
+          <ns4:ID>8c65567d-f0f3-4bcd-a59e-ca1b27165ca0</ns4:ID>
+          <ns4:Test>false</ns4:Test>
+          <ns4:Prepared>2013-02-28T05:01:56+01:00</ns4:Prepared>
+          <ns4:Sender id="ECB">
+            <ns4:Name>European Central Bank</ns4:Name>
+            <ns4:Contact>
+              <ns4:Email>statistics@ecb.europa.eu</ns4:Email>
+            </ns4:Contact>
+          </ns4:Sender>
+        </ns4:Header>
+        <ns9:DataSet action="Replace" keyFamilyURI="http://sdw-ws.ecb.europa.eu/KeyFamily/ECB_ICP1">
+          <ns9:KeyFamilyRef>ECB_ICP1</ns9:KeyFamilyRef>
+          <ns9:Group type="Group">
+            <ns9:GroupKey>
+              <ns9:Value value="AT" concept="REF_AREA"/>
+              <ns9:Value value="N" concept="ADJUSTMENT"/>
+              <ns9:Value value="000000" concept="ICP_ITEM"/>
+              <ns9:Value value="4" concept="STS_INSTITUTION"/>
+              <ns9:Value value="ANR" concept="ICP_SUFFIX"/>
+            </ns9:GroupKey>
+            <ns9:Attributes>
+              <ns9:Value value="1" concept="DECIMALS"/>
+              <ns9:Value value="0" concept="UNIT_MULT"/>
+              <ns9:Value value="PCCH" concept="UNIT"/>
+              <ns9:Value value="Austria - HICP - Overall index, Annual rate of change, Eurostat, Neither seasonally nor working day adjusted" concept="TITLE_COMPL"/>
+            </ns9:Attributes>
+            <ns9:Series>
+              <ns9:SeriesKey>
+                <ns9:Value value="M" concept="FREQ"/>
+                <ns9:Value value="AT" concept="REF_AREA"/>
+                <ns9:Value value="N" concept="ADJUSTMENT"/>
+                <ns9:Value value="000000" concept="ICP_ITEM"/>
+                <ns9:Value value="4" concept="STS_INSTITUTION"/>
+                <ns9:Value value="ANR" concept="ICP_SUFFIX"/>
+              </ns9:SeriesKey>
+              <ns9:Attributes>
+                <ns9:Value value="SPB.T1101" concept="PUBL_PUBLIC"/>
+                <ns9:Value value="A" concept="COLLECTION"/>
+                <ns9:Value value="ICPT.M.VAL.ANR05.AUT.00" concept="DOM_SER_IDS"/>
+                <ns9:Value value="P1M" concept="TIME_FORMAT"/>
+              </ns9:Attributes>
+              <ns9:Obs>
+                <ns9:Time>2011-02</ns9:Time>
+                <ns9:ObsValue value="3.1"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-03</ns9:Time>
+                <ns9:ObsValue value="3.3"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-04</ns9:Time>
+                <ns9:ObsValue value="3.7"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-05</ns9:Time>
+                <ns9:ObsValue value="3.7"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-06</ns9:Time>
+                <ns9:ObsValue value="3.7"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-07</ns9:Time>
+                <ns9:ObsValue value="3.8"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-08</ns9:Time>
+                <ns9:ObsValue value="3.7"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-09</ns9:Time>
+                <ns9:ObsValue value="3.9"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-10</ns9:Time>
+                <ns9:ObsValue value="3.8"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-11</ns9:Time>
+                <ns9:ObsValue value="3.9"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2011-12</ns9:Time>
+                <ns9:ObsValue value="3.4"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-01</ns9:Time>
+                <ns9:ObsValue value="2.9"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-02</ns9:Time>
+                <ns9:ObsValue value="2.6"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-03</ns9:Time>
+                <ns9:ObsValue value="2.6"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-04</ns9:Time>
+                <ns9:ObsValue value="2.3"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-05</ns9:Time>
+                <ns9:ObsValue value="2.2"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-06</ns9:Time>
+                <ns9:ObsValue value="2.2"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-07</ns9:Time>
+                <ns9:ObsValue value="2.1"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-08</ns9:Time>
+                <ns9:ObsValue value="2.3"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-09</ns9:Time>
+                <ns9:ObsValue value="2.8"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-10</ns9:Time>
+                <ns9:ObsValue value="2.9"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-11</ns9:Time>
+                <ns9:ObsValue value="2.9"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="A" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+              <ns9:Obs>
+                <ns9:Time>2012-12</ns9:Time>
+                <ns9:ObsValue value="2.9"/>
+                <ns9:Attributes>
+                  <ns9:Value value="F" concept="OBS_CONF"/>
+                  <ns9:Value value="P" concept="OBS_STATUS"/>
+                </ns9:Attributes>
+              </ns9:Obs>
+            </ns9:Series>
+          </ns9:Group>
+        </ns9:DataSet>
+      </ns4:MessageGroup>
+    </ns3:GetGenericDataResponse>
+  </S:Body>
+</S:Envelope>

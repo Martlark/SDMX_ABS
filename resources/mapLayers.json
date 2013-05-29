@@ -1,0 +1,40 @@
+{"description" : "This file describes all the map layers that the user can select from", 
+ "layers" : [	
+    	 {
+    	    "name" : "States STE_CODE",
+    	    "id" : "STE_CODE",
+    	    "featureLayerMap" : "http://www.censusdata.abs.gov.au/arcgis/rest/services/FIND/MapServer/1",
+    	    "descriptionTemplate" : "stateMapDescription.template",
+    	    "areaField" : "STE_CODE",
+    	    "nameField" : "STE_NAME",
+    	    "outFields" : ["STE_CODE","STE_NAME"]
+    	 },
+    	 {
+    	    "name" : "Statistical Area 2 (7 SA2_MAIN)",
+    	    "id" : "SA2",
+    	    "featureLayerMap" : "http://www.censusdata.abs.gov.au/arcgis/rest/services/FIND/MapServer/27",
+            "descriptionTemplate" : "sa2MapDescription.template",
+    	    "areaField" : "SA2_MAIN",
+    	    "nameField" : "SA2_NAME",
+    	    "outFields" : ["SA2_MAIN","SA2_NAME"]
+    	 },
+    	 {
+    	    "name" : "Statistical Area 3 (5 SA3_CODE)",
+    	    "id" : "SA3",
+    	    "featureLayerMap" : "http://www.censusdata.abs.gov.au/arcgis/rest/services/FIND/MapServer/28",
+            "descriptionTemplate" : "stateMapDescription.template",
+    	    "areaField" : "SA3_CODE",
+    	    "nameField" : "SA3_NAME",
+    	    "outFields" : ["SA3_CODE","SA3_NAME"]
+    	 },
+         {
+            "name" : "Statistical Area 4 (3 SA4_CODE)",
+            "id" : "SA4",
+            "featureLayerMap" : "http://www.censusdata.abs.gov.au/arcgis/rest/services/FIND/MapServer/29",
+            "descriptionTemplate" : "stateMapDescription.template",
+            "areaField" : "SA4_CODE",
+            "nameField" : "SA4_NAME",
+            "outFields" : ["SA4_CODE","SA4_NAME","STATE_CODE"]
+         }
+    ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id='headTitle'></title>
+        <!--#head.html#-->
+        <!-- google charting scripts for bubble stuff-->
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src="queryResult.js"></script>
+        <script>
+			google.load("visualization", "1", {packages: ["corechart"]});
+			dojo.ready(function()
+			{
+				queryResultsInit();
+			});
+        </script>
+    </head>
+
+    <body class="claro">
+        <div class='hideOnEmbed'>
+            <!--#navigation.html#-->
+        </div>
+        <h1 id='h1Title'></h1>
+        <br/>
+        <input type='text' class="saveQuery" id='query0'  value='#query0#'  style='display:none'/>
+        <input type='text' class="saveQuery" id='query1'  value='#query1#'  style='display:none'/>
+        <input type='text' class="saveQuery" id='query2'  value='#query2#'  style='display:none'/>
+        <input type='text' class="saveQuery" id='title'   value='#title#'   style='display:none'/>
+        <input type='text' class="saveQuery" id='options' value='#options#' style='display:none'/>
+        <input type='text' id='embed' value='#embed#' style='display:none'/>
+
+        <!--#executing.html#-->
+        <div id='visualisation' style="height:700px">
+
+             <div id='multiControls' >
+                 <div id="multiButtons" class='hideOnLoad'>
+		             <label for="xAxis">X Axis: </label><input id='xAxis'/>
+		             <label for="yAxis">Y Axis: </label><input id='yAxis'/>
+                     <input type='button' value='Redraw' onclick='multiRedraw();' style="float:left;"/>
+                     <input type='button'  style="float:left;" id='sliderPlay' onclick="sliderPlayQuery();" value='Play'/>
+                     <label for="bubble">Bubble value: </label><div id='bubble'></div>
+                     <h3 id='multiInstructions'>Choose from the axis options and click Redraw to show the chart</h3>
+                 </div>
+                 <div id='sliderStuff' >
+                     <div id='slider'></div>
+                     <p id='sliderStatus'></p>
+                 </div>
+                 <div id="multiChart" style="height:600px"></div>
+                 <div id="multiChartLegend"></div>
+             </div>
+	         <div id='chart0'>
+	             <div id="resultsChart0" style="height:600px"></div>
+	             <div id="resultsChart0Legend"></div>
+	         </div>
+	         <!--  TODO: make these user changeable later on -->
+             <input type='button' value='Redraw' onclick='chartRedraw();' style="float:left;display:none"/>
+             <!--  -->
+         </div>
+         
+         <div class='hideOnEmbed' style='display: none;'>
+            <h1>Description of chart</h1>
+            <textarea id='chartDescription' rows='10' cols='80' class='mapDescription'></textarea>
+        </div>
+        <div data-dojo-type="dijit/layout/TabContainer" id='tabMain' class='queryTabcontainer hideOnEmbed' tabStrip="true">
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Query Results 1" id="tabQueryResults0" >
+                <div class='hideOnLoad'>
+                    <p id='queryTitle0'></p>    
+	                <label for='title0'>Chart Axis Title:</label><input type='text' id='title0'/>
+    				<input type="button" value="export" onclick="exportData(sdmxDataList[0]);"/>
+			    </div>
+                <div id="queryResultsGrid0" class='queryResultsGrid'></div>
+            </div>
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Query Results 2" id="tabQueryResults1" >
+                <p id='queryTitle1'></p>
+                <label class='hideOnLoad' for='title1'>Chart Axis Title:</label><input class='hideOnLoad' type='text' id='title1'/>
+                <div id="queryResultsGrid1" class='queryResultsGrid'></div>
+            </div>
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Query Results 3" id="tabQueryResults2" >
+                <p id='queryTitle2'></p>
+                <label class='hideOnLoad' for='title2'>Chart Axis Title:</label><input class='hideOnLoad' type='text' id='title2'/>
+                <div id="queryResultsGrid2" class='queryResultsGrid'></div>
+            </div>
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Share" id="tabShare" >
+              <input type="button" value="Save" onclick="call_create_query();" />
+              <label for='name'>Query Name:</label><input type='text' class='saveQuery saveName' id='name'/>
+              <!--#sharelink.html#-->
+              <p>Copy and paste this code to embed this chart on your blog or page</p>
+              <textarea rows="3" cols="100" id='embedCode'></textarea>
+          </div>
+
+        </div>
+
+        <textarea id="content" style='display:none' class='bigbox'></textarea>
+        <textarea id="dataResults" style='display:none' class='bigbox'></textarea>
+    </body>
+</html>

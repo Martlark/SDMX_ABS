@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><!--#title.html#--> SDMX Dataflow Query Specifier</title>
+        <!--#head.html#-->
+		<script src="dataflow.js"></script>
+        <script>
+			dojo.ready(function() {
+				init_dataflow();
+			});
+        </script>
+    </head>
+
+    <body class="claro">
+        <!--#navigation.html#-->
+        <h1><!--#title.html#--> SDMX Dataflow Query Specifier</h1>
+        <span id="status"></span>
+        <!--#executing.html#-->
+        <input type="button" value="Query" onclick="dataset_query({});" />
+        <input type="button" value="Map" onclick="dataset_query({map: true});" />
+        <br>
+        <label for='StartTime'>Start time: </label><input type='text' data-dojo-type="dijit/form/DateTextBox" id='StartTime' value=''/>
+        <label for='EndTime'>End time: </label><input type='text' data-dojo-type="dijit/form/DateTextBox" id='EndTime' value=''/>
+        <label for='perCapita'>Per Capita: </label><input type="checkbox" id="perCapita"/>
+        <label for='breakField'>Series break: </label><input id="breakField">
+        <label for='mapLayers'>Map layer: </label><input id="mapLayers">
+
+        <div data-dojo-type="dijit/layout/TabContainer" id='tabMain' style="width: 100%; height: 750px;" tabStrip="true">
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Data Flows" id="tabDataflow" >
+                <table>
+                    <tr>
+                        <td>
+                            <label for='objectid0'>Data flow ID 1</label></td><td><input type='text' id='objectid0' value='#objectid#'/>
+                        </td>
+                        <td>
+                            <input type="button" value="Lookup" onclick="call_dataflow_ws(0);" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for='objectid1'>Add Data flow ID 2</label></td><td><input type='text' id='objectid1' value=''/>
+                        </td>
+                        <td>
+                            <input type="button" value="Add Data flow" onclick="call_dataflow_ws(1);" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for='objectid2'>Add Data flow ID 3</label>
+                        </td>
+                        <td>
+                            <input type='text' id='objectid2' value=''/>
+                        </td>
+                        <td>
+                            <input type="button" value="Add Data flow" onclick="call_dataflow_ws(2);" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Query 1" selected="true" id="tabQuery" >
+                <h2 id='dataFlowTitle0'></h2>
+                <div id='keyFamilyLinks0'></div>
+                <div id='grid0' class='resultsGrid'></div>
+            </div>
+
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Query 2" id="tabQuery2" >
+                <h2 id='dataFlowTitle1'></h2>
+                <div id='keyFamilyLinks1'></div>
+                <div id='grid1' class='resultsGrid'></div>
+            </div>
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Query 3" id="tabQuery3" >
+                <h2 id='dataFlowTitle2'></h2>
+                <div id='keyFamilyLinks2'></div>
+                <div id='grid2' class='resultsGrid'></div>
+            </div>
+
+            <div data-dojo-type="dijit/layout/ContentPane" title="Debug" id="tabDebug" >
+                <textarea id="content" class='bigbox'></textarea>
+            </div>
+        </div>
+        <div id='dialogContent' style='display:none'>
+            <!-- these bits appear in the pop up dialog for selecting codes in their own iframe-->
+            <h1><span id="__codeListName"></span></h1>
+            
+            <input style='position: absolute; top: 2px; right: 2px; border: 4px solid red; width: 30px; height: 28px; font-size:20px' type="button" onclick="cancelDialog();" value="X"/>
+            
+            <label style='clear:all' for="__codeFilter" >Code: </label>
+            <input type="text" id="__codeFilter" tabindex="-1" onkeyup="gridFilter( {input:this, grid:valueDialogGrid, column:'code', exact:true, minLength:1} );"/>
+            <label for="__descriptionFilter" >Desc: </label>
+            <input type="text" id="__descriptionFilter" onkeyup="gridFilter( {input:this, grid:valueDialogGrid, column:'description'} );"/>
+        	<input type="button" onclick="okDialog({filterSelect:true});" value="Select by code Filter"/>
+            <input type="button" onclick="okDialog({});" value="OK"/>
+
+            <br/>
+        	<input type="button" onclick="selectAllDialog({code:'codeFilter',description:'descriptionFilter'});" value="Select All"/>
+        	<input type="button" onclick="clearAllDialog();" value="Clear"/>
+        </div>
+    </body>
+</html>

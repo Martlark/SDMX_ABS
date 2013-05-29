@@ -1,0 +1,6 @@
+title=LF - Labour Force by ASGC_2010. 
+name=State Person Unemployment rate 
+random={3}
+method=create
+query0={"qAnd":[{"c":"ITEM","v":"14"},{"c":"SEX_ABS","v":"3"},{"c":"AGE","v":"1599"},{"c":"TSEST","v":"30"},{"c":"FREQUENCY","v":"M"}],"qOr":[{"c":"ASGC_2010","v":"1,2,3,4,5,6,7,8"}],"startTime":"2008-05-21","endTime":"","dataSetId":"LF","measure":"Value","frequency":"Monthly"}
+options={"breakField":"ASGC_2010","mapLayerId":"STE_CODE","perCapita":false,"map":true}

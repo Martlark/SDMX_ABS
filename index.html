@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- this page is used to open the home.html page using the r template manager
+and also by the query shortener to open short urls
+replace with a jsp page or php page as required.
+-->
+<html>
+    <head>
+    	<title>Empty index page to load proper page via page handler</title>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script>
+        	var globalOptions = {};
+/**
+ * returns a random string of stuff to be used to thwart IE resource caching.
+ * 
+ * @param string_length
+ *            {int} - the number of characters to return
+ * @returns {String}
+ */
+function randomString(string_length) {
+	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+	var randomstring = '';
+
+	for( var i = 0; i < string_length; i++ ) {
+		var rnum = Math.floor(Math.random() * chars.length);
+		randomstring += chars.substring(rnum, rnum + 1);
+	}
+	return randomstring;
+}
+/**
+ * read the options.json file that contains all the options used by the project
+ * 
+ */
+   function setGlobalOptions() {
+	var xmlhttp;
+	var randomJunk = randomString(8); // use randomJunk to defeat IE caching.
+
+	try {
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open('GET', 'resources/options.json?' + randomJunk, false);
+		xmlhttp.send();
+
+		globalOptions = JSON.parse(xmlhttp.responseText);
+	} catch( err ) {
+		alert('GIGANTIC ERROR!!!! Options not specified correctly or there is a problem loading:' + err.message);
+	}
+}
+     	//alert('hello');
+		setGlobalOptions();
+		//alert( globalOptions.r );
+        window.location = globalOptions.r + '?home.html';
+        </script>
+    </head>
+    <body>
+        Redirecting.   <a href="r.php?home.html">Click here</a> if nothing happens.
+        NOTE: JavaScript is required to access and use these pages.
+    </body>
+</html>

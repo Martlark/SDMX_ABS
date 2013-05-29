@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+	<!--The viewport meta tag is used to improve the presentation and behavior of the samples
+	on iOS devices-->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="pages.css">
+	<script>var dojoConfig = { isDebug: true, parseOnLoad : true };</script>
+	<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.3/"></script>
+	<script>
+	dojo.require( "dijit.layout.TabContainer" );
+	dojo.require( "dijit.layout.ContentPane" );
+
+    dojo.ready( function() 
+	{
+    });
+	</script>
+</head>
+
+<body class="claro">
+	  
+	<div data-dojo-type="dijit/layout/TabContainer" style="width: 500px; height: 300px;" tabStrip="true">
+		
+		<div data-dojo-type="dijit/layout/ContentPane" title="Query" selected="true" id="tabQuery" >
+			Tab 1
+		</div>
+		
+		<div data-dojo-type="dijit/layout/ContentPane" title="Query Results" id="tabQueryResults" >
+			Tab 2
+		</div>
+	</div>
+
+</body>
+</html>

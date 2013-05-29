@@ -1,0 +1,35 @@
+http://sdw-ws.ecb.europa.eu/services/SDMXQuery
+
+<quer:And>
+   <quer:Dimension id="FREQ">D</quer:Dimension>
+   <quer:Dimension id="CURRENCY_DENOM">EUR</quer:Dimension>
+   <quer:Dimension id="EXR_TYPE">SP00</quer:Dimension>
+   <quer:Dimension id="EXR_SUFFIX">A</quer:Dimension>
+   <quer:Time>
+        <quer:StartTime>2008-10-13</quer:StartTime>
+         <quer:EndTime>2008-10-17</quer:EndTime>
+   </quer:Time>
+   <quer:Dataflow>EXR</quer:Dataflow>
+   <quer:Or>
+       <quer:Dimension id="CURRENCY">USD</quer:Dimension>
+       <quer:Dimension id="CURRENCY">GBP</quer:Dimension>
+       <quer:Dimension id="CURRENCY">JPY</quer:Dimension>
+   </quer:Or>
+</quer:And>
+
+GetCategoryScheme
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:web1="http://webservices.sdw.ecb/" 
+xmlns:quer="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query">
+   <soapenv:Header/>
+<soapenv:Body>
+      <web1:GetCategoryScheme>
+         <in>
+            <quer:AgencyID>ECB</quer:AgencyID>
+<quer:ID>SDW_ECONOMIC_CONCEPTS</quer:ID>
+         </in>
+      </web1:GetCategoryScheme>
+   </soapenv:Body>
+</soapenv:Envelope>
+	

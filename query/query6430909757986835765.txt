@@ -1,0 +1,6 @@
+title=ALC - Apparent Consumption of Alcohol, Australia by SUB. 
+name=ALC - Apparent Consumption of Alcohol, Australia by SUB. 
+random={3}
+method=create
+query0={"qAnd":[{"c":"TYP","v":"1"},{"c":"MEA","v":"1"},{"c":"FREQUENCY","v":"A"}],"qOr":[{"c":"SUB","v":"6,10,11,12"}],"startTime":"2008-05-02","endTime":"","dataSetId":"ALC","measure":"Volume","frequency":"Annual"}
+options={"breakField":"SUB","mapLayerId":"None","perCapita":false}

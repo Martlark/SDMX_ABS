@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body><GetGenericData xmlns="http://stats.oecd.org/OECDStatWS/SDMX/">
+<QueryMessage>
+  <message:QueryMessage xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query http://www.sdmx.org/docs/2_0/SDMXQuery.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://www.sdmx.org/docs/2_0/SDMXMessage.xsd">
+	<message:Header xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+		<ID>none</ID>
+		<Test>false</Test>
+		<Truncated>false</Truncated>
+		<Prepared>2012-06-05T16:53:38</Prepared>
+		<Sender id="YourID">
+			<Name xml:lang="en">Your English Name</Name>
+		</Sender>
+		<Receiver id="ABS">
+			<Name xml:lang="en">Australian Bureau of Statistics</Name>
+			<Name xml:lang="fr">Australian Bureau of Statistics</Name>
+		</Receiver>
+	</message:Header>
+	<message:Query xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+		<DataWhere xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query">
+			<And>
+				<DataSet>LF</DataSet>
+				<Dimension id="SEX_ABS">3</Dimension>
+				<Dimension id="AGE">1599</Dimension>
+				<Dimension id="TSEST">20</Dimension>
+				<Dimension id="FREQUENCY">M</Dimension>
+				<Attribute id="TIME_FORMAT">P1M</Attribute>
+				<Time>
+					<StartTime>2008-10</StartTime>
+					<EndTime>2010-10</EndTime>
+				</Time>
+				<Or>
+					<Dimension id="ASGC_2010">0</Dimension>
+					<Dimension id="ASGC_2010">1</Dimension>
+					<Dimension id="ASGC_2010">2</Dimension>
+					<Dimension id="ASGC_2010">3</Dimension>
+					<Dimension id="ASGC_2010">4</Dimension>
+					<Dimension id="ASGC_2010">5</Dimension>
+					<Dimension id="ASGC_2010">6</Dimension>
+					<Dimension id="ASGC_2010">7</Dimension>
+					<Dimension id="ASGC_2010">8</Dimension>
+				</Or>
+				<Or>
+					<Dimension id="ITEM">4</Dimension>
+					<Dimension id="ITEM">13</Dimension>
+					<Dimension id="ITEM">14</Dimension>
+					<Dimension id="ITEM">10</Dimension>
+				</Or>
+			</And>
+		</DataWhere>
+	</message:Query>
+  </message:QueryMessage>
+</QueryMessage>
+</GetGenericData>
+</S:Body>
+</S:Envelope>

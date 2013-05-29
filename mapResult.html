@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id='headTitle'></title>
+		<!--#maphead.html#-->
+        <script src="mapResult.js"></script>
+        <script>
+			dojo.ready(function() {
+				initMapResults();
+			});
+        </script>
+    </head>
+
+    <body class="claro" >
+		<!--#navigation.html#-->
+        <h1 id='h1Title'></h1>
+
+        <input type='text' class='saveQuery' id='query0' value='#query0#' style='display:none'/>
+        <input type='text' class='saveQuery' id='title' value='#title#' style='display:none'/>
+        <input type='text' class='saveQuery' id='options' value='#options#' style='display:none'/>
+        <!--#executing.html#-->
+
+        <!-- next two classes will be float:left by css -->
+
+        <div>
+            <div class='mapMainTable'>
+
+                <div class='mapKey' id='keyTable'></div>
+                <div class='mapMap' id="map"></div>
+
+            </div>
+
+            <div class='mapTimeLine'>
+            	<div class='hideOnLoad'>
+	                <h1 id='currentTimePeriod'></h1>
+	                <input type='button' id='sliderPlay' onclick="sliderPlay();" value='Play' /><input type="checkbox" checked id="compareChart"/><label for='compareChart'>Compare on map</label>
+	                <div id='slider'></div>
+	                <p>Click on an area in the map to add it to the chart</p>
+	            </div>
+                <div id="chart" class='mapChart'></div>
+                <div id='chartLegend'></div>
+            </div>
+
+            <div class='mapFooter'>
+                <!-- debugging information -->
+                <div id='windowDimensions'></div>
+                <textarea id="content" style='display:none' class='bigbox'></textarea>
+                <div class='hideOnLoad'>
+	                <h1>Description of map</h1>
+	                <textarea id='mapDescription' rows='10' cols='80' class='mapDescription'></textarea>
+	                <h1>Table of results.</h1>
+		            <label for="timeFilter" >Time filter: </label>
+		            <input type="text" id="timeFilter" onkeyup="gridFilter( {input:this, grid:'queryResultsGrid0', column:'Time'} );"/>
+	                <label for="valueFilter" >Value filter: </label>
+	                <input type="text" id="valueFilter" onkeyup="gridFilter( {input:this, grid:'queryResultsGrid0', column:'Value'} );"/>
+                </div>
+                <div id="queryResultsGrid0" class='mapResultsGrid'></div>
+                <div class='hideOnLoad'>
+	                
+	                <input type="button" value="Save" onclick="call_create_query();" />
+	                <label for='name'>Query Name:</label><input type='text' class="saveName saveQuery" id='name'/>
+	                <!--#sharelink.html#-->
+	            </div>
+            </div>
+            
+        </div>
+    </body>
+
+</html>
+

@@ -1,0 +1,6 @@
+title=CAPEX - Private New Capital Expenditure and Expected Expenditure by STATE. 
+name=CAPEX - Private New Capital Expenditure and Expected Expenditure by STATE. 
+random={3}
+method=create
+query0={"qAnd":[{"c":"EXP","v":"4"},{"c":"ASSET","v":"999"},{"c":"IND","v":"-"},{"c":"TSEST","v":"30"},{"c":"FREQUENCY","v":"Q"}],"qOr":[{"c":"STATE","v":"1,2,3,4,5,6,7,8"}],"startTime":"2008-05-06","endTime":"","dataSetId":"CAPEX","measure":"v","frequency":"Quarterly"}
+options={"breakField":"STATE","mapLayerId":"STE_CODE","perCapita":false}

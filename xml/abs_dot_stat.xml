@@ -1,0 +1,62 @@
+http://stat.abs.gov.au/sdmxws/sdmx.asmx?op=GetGenericData
+
+<?xml version="1.0" encoding="utf-8"?>
+ <!-- http://www.webservicex.net/stockquote.asmx?op=GetQuote -->
+ <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+<message:QueryMessage
+xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query"
+xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message"
+xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query http://www.sdmx.org/docs/2_0/SDMXQuery.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://www.sdmx.org/docs/2_0/SDMXMessage.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Header xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+<ID>none</ID>
+<Test>false</Test>
+<Truncated>false</Truncated>
+<Prepared>2012-06-05T16:53:38</Prepared>
+<Sender id="YourID">
+<Name xml:lang="en">Your English Name</Name>
+</Sender>
+<Receiver id="ABS">
+<Name xml:lang="en">Australian Bureau of Statistics</Name>
+<Name xml:lang="fr">Australian Bureau of Statistics</Name>
+</Receiver>
+</Header>
+<Query xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+<DataWhere xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query">
+<And>
+<DataSet>LF</DataSet>
+<Dimension id="SEX_ABS">3</Dimension>
+<Dimension id="AGE">1599</Dimension>
+<Dimension id="TSEST">20</Dimension>
+<Dimension id="FREQUENCY">M</Dimension>
+<Attribute id="TIME_FORMAT">P1M</Attribute>
+<Time>
+<StartTime>2011-06</StartTime>
+<EndTime>2011-08</EndTime>
+</Time>
+<Or>
+<Dimension id="ASGC_2010">0</Dimension>
+<Dimension id="ASGC_2010">1</Dimension>
+<Dimension id="ASGC_2010">2</Dimension>
+<Dimension id="ASGC_2010">3</Dimension>
+<Dimension id="ASGC_2010">4</Dimension>
+<Dimension id="ASGC_2010">5</Dimension>
+<Dimension id="ASGC_2010">6</Dimension>
+<Dimension id="ASGC_2010">7</Dimension>
+<Dimension id="ASGC_2010">8</Dimension>
+</Or>
+<Or>
+<Dimension id="ITEM">4</Dimension>
+<Dimension id="ITEM">13</Dimension>
+<Dimension id="ITEM">14</Dimension>
+<Dimension id="ITEM">10</Dimension>
+</Or>
+</And>
+</DataWhere>
+</Query>
+</message:QueryMessage>
+   </soap:Body> 
+ </soap:Envelope>

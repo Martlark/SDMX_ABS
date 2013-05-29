@@ -1,0 +1,6 @@
+title=MERCH_EXP - Merchandise Exports - ($ Thousand) by REGION. 
+name=MERCH_EXP - Merchandise Exports - ($ Thousand) by REGION. 
+random={3}
+method=create
+query0={"qAnd":[{"c":"SITC_REV3","v":"-1"},{"c":"INDUSTRY","v":"-1"},{"c":"COUNTRY","v":"-"},{"c":"FREQUENCY","v":"M"}],"qOr":[{"c":"REGION","v":"1,2,3,4,5,6,7,8,9,F"}],"startTime":"2008-05-21","endTime":"","dataSetId":"MERCH_EXP","measure":"Value","frequency":"Monthly"}
+options={"breakField":"REGION","mapLayerId":"STE_CODE","perCapita":false,"map":true}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="pages.css" type="text/css"/>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+        <title>Code List Explorer</title>
+        <!--#head.html#-->
+        <script>
+            dojo.ready(function()
+            {
+                init_codelistExplorer();
+            });
+
+        </script>
+    </head>
+
+    <body style="claro">
+        <!--#navigation.html#-->
+        <h1>Code List Explorer</h1>
+        <br/>
+        <!--#executing.html#-->
+        <div>
+            <label for='codeListFilter' >Code List Filter: </label><input type='text' id='codeListFilter'
+                                                                          oninput="gridFilter( {input:this, grid:'codeListGrid', column:'code'} );"/>
+            <label for='codeListDescriptionFilter' >Description Filter: </label><input type='text' id='codeListDescriptionFilter'
+                                                                                       oninput="gridFilter( {input:this, grid:'codeListGrid', column:'description'} );"/>
+            <div id='codeListGrid' class='resultGrid'></div>
+        </div>
+        <div id="codeListName">Click on code list table to view details</div>
+        <label for='codeFilter' >Code Filter: </label><input type='text' id='codeFilter'
+                                                             oninput="gridFilter( {input:this, grid:grid, column:'code'} );"/>
+        <label for='descriptionFilter' >Description Filter: </label><input type='text' id='descriptionFilter'
+                                                                           oninput="gridFilter( {input:this, grid:grid, column:'description'} );"/>
+        <div id='grid' class='resultsGrid'></div>
+    </body>
+</html>

@@ -1,0 +1,4173 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns3:GetCategorySchemeResponse xmlns:ns2="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:ns3="http://webservices.sdw.ecb/" xmlns:ns4="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:ns5="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/metadatareport" xmlns:ns6="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:ns7="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata" xmlns:ns8="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:ns9="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:ns10="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:ns11="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/utility" xmlns:ns12="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:ns13="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry">
+            <out>
+                <ns4:Structure>
+                    <ns4:Header>
+                        <ns4:ID>63a91680-7116-4508-b03b-c1dd8c69ffb9</ns4:ID>
+                        <ns4:Test>false</ns4:Test>
+                        <ns4:Prepared>2013-02-17T23:55:11+01:00</ns4:Prepared>
+                        <ns4:Sender id="ECB">
+                            <ns4:Name>European Central Bank</ns4:Name>
+                            <ns4:Contact>
+                                <ns4:Email>statistics@ecb.europa.eu</ns4:Email>
+                            </ns4:Contact>
+                        </ns4:Sender>
+                    </ns4:Header>
+                    <ns4:CategorySchemes>
+                        <ns12:CategoryScheme isFinal="true" version="1.0" agencyID="ECB" id="SDW_ECONOMIC_CONCEPTS">
+                            <ns12:Name>SDW economic concepts</ns12:Name>
+                            <ns12:Category id="2018800">
+                                <ns12:Name>Monetary operations</ns12:Name>
+                                <ns12:Category id="2018801">
+                                <ns12:Name>Key interest rates</ns12:Name>
+                                <ns12:DataflowRef>
+                                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                                    <ns12:DataflowID>2136672</ns12:DataflowID>
+                                    <ns12:Version>1.0</ns12:Version>
+                                </ns12:DataflowRef>
+                            </ns12:Category>
+                            <ns12:Category id="2018802">
+                                <ns12:Name>Minimum reserves and liquidity</ns12:Name>
+                                <ns12:DataflowRef>
+                                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                                    <ns12:DataflowID>2136673</ns12:DataflowID>
+                                    <ns12:Version>1.0</ns12:Version>
+                                </ns12:DataflowRef>
+                                <ns12:DataflowRef>
+                                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                                    <ns12:DataflowID>2034468</ns12:DataflowID>
+                                    <ns12:Version>1.0</ns12:Version>
+                                </ns12:DataflowRef>
+                            </ns12:Category>
+                        </ns12:Category>
+                        <ns12:Category id="2018803">
+                            <ns12:Name>Prices, output, demand and labour market</ns12:Name>
+                            <ns12:Category id="2120783">
+                            <ns12:Name>Prices</ns12:Name>
+                            <ns12:Category id="2120778">
+                            <ns12:Name>Consumer price indices</ns12:Name>
+                            <ns12:DataflowRef>
+                                <ns12:AgencyID>ECB</ns12:AgencyID>
+                                <ns12:DataflowID>2034476</ns12:DataflowID>
+                                <ns12:Version>1.0</ns12:Version>
+                            </ns12:DataflowRef>
+                        </ns12:Category>
+                        <ns12:Category id="2120779">
+                            <ns12:Name>Industrial producer prices</ns12:Name>
+                            <ns12:DataflowRef>
+                                <ns12:AgencyID>ECB</ns12:AgencyID>
+                                <ns12:DataflowID>2034425</ns12:DataflowID>
+                                <ns12:Version>1.0</ns12:Version>
+                            </ns12:DataflowRef>
+                        </ns12:Category>
+                        <ns12:Category id="2120780">
+                            <ns12:Name>Deflators</ns12:Name>
+                            <ns12:DataflowRef>
+                                <ns12:AgencyID>ECB</ns12:AgencyID>
+                                <ns12:DataflowID>2034423</ns12:DataflowID>
+                                <ns12:Version>1.0</ns12:Version>
+                            </ns12:DataflowRef>
+                        </ns12:Category>
+                        <ns12:Category id="2120781">
+                            <ns12:Name>Residential property price indicator</ns12:Name>
+                            <ns12:DataflowRef>
+                                <ns12:AgencyID>ECB</ns12:AgencyID>
+                                <ns12:DataflowID>2034477</ns12:DataflowID>
+                                <ns12:Version>1.0</ns12:Version>
+                            </ns12:DataflowRef>
+                        </ns12:Category>
+                        <ns12:Category id="2120782">
+                            <ns12:Name>Oil price</ns12:Name>
+                            <ns12:DataflowRef>
+                                <ns12:AgencyID>ECB</ns12:AgencyID>
+                                <ns12:DataflowID>2035168</ns12:DataflowID>
+                                <ns12:Version>1.0</ns12:Version>
+                            </ns12:DataflowRef>
+                            <ns12:DataflowRef>
+                                <ns12:AgencyID>ECB</ns12:AgencyID>
+                                <ns12:DataflowID>9038785</ns12:DataflowID>
+                                <ns12:Version>1.0</ns12:Version>
+                            </ns12:DataflowRef>
+                        </ns12:Category>
+                        <ns12:Category id="6513466">
+                            <ns12:Name>ECB non-energy commodity prices</ns12:Name>
+                            <ns12:DataflowRef>
+                                <ns12:AgencyID>ECB</ns12:AgencyID>
+                                <ns12:DataflowID>6413551</ns12:DataflowID>
+                                <ns12:Version>1.0</ns12:Version>
+                            </ns12:DataflowRef>
+                        </ns12:Category>
+                    </ns12:Category>
+                    <ns12:Category id="2120784">
+                        <ns12:Name>Costs</ns12:Name>
+                        <ns12:Category id="2120785">
+                        <ns12:Name>Compensation</ns12:Name>
+                        <ns12:DataflowRef>
+                            <ns12:AgencyID>ECB</ns12:AgencyID>
+                            <ns12:DataflowID>2034489</ns12:DataflowID>
+                            <ns12:Version>1.0</ns12:Version>
+                        </ns12:DataflowRef>
+                        <ns12:DataflowRef>
+                            <ns12:AgencyID>ECB</ns12:AgencyID>
+                            <ns12:DataflowID>9384576</ns12:DataflowID>
+                            <ns12:Version>1.0</ns12:Version>
+                        </ns12:DataflowRef>
+                    </ns12:Category>
+                    <ns12:Category id="2120786">
+                        <ns12:Name>Unit labour costs</ns12:Name>
+                        <ns12:DataflowRef>
+                            <ns12:AgencyID>ECB</ns12:AgencyID>
+                            <ns12:DataflowID>2034422</ns12:DataflowID>
+                            <ns12:Version>1.0</ns12:Version>
+                        </ns12:DataflowRef>
+                    </ns12:Category>
+                    <ns12:Category id="2120787">
+                        <ns12:Name>Hourly labour cost indices (LCI)</ns12:Name>
+                        <ns12:DataflowRef>
+                            <ns12:AgencyID>ECB</ns12:AgencyID>
+                            <ns12:DataflowID>2034488</ns12:DataflowID>
+                            <ns12:Version>1.0</ns12:Version>
+                        </ns12:DataflowRef>
+                    </ns12:Category>
+                    <ns12:Category id="2120788">
+                        <ns12:Name>Negotiated wages</ns12:Name>
+                        <ns12:DataflowRef>
+                            <ns12:AgencyID>ECB</ns12:AgencyID>
+                            <ns12:DataflowID>2136595</ns12:DataflowID>
+                            <ns12:Version>1.0</ns12:Version>
+                        </ns12:DataflowRef>
+                        <ns12:DataflowRef>
+                            <ns12:AgencyID>ECB</ns12:AgencyID>
+                            <ns12:DataflowID>3835936</ns12:DataflowID>
+                            <ns12:Version>1.0</ns12:Version>
+                        </ns12:DataflowRef>
+                    </ns12:Category>
+                </ns12:Category>
+                <ns12:Category id="2018805">
+                    <ns12:Name>National accounts and output indicators</ns12:Name>
+                    <ns12:Category id="2120796">
+                    <ns12:Name>GDP and expenditure components </ns12:Name>
+                    <ns12:Category id="9484571">
+                    <ns12:Name>Total GDP</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384713</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484518">
+                    <ns12:Name>Final consumption expenditure of households and NPISH</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384580</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384579</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484519">
+                    <ns12:Name>Government Final Consumption expenditure</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384582</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384581</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484520">
+                    <ns12:Name>Gross Capital Formation</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384584</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384583</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484521">
+                    <ns12:Name>Change in Inventories less disposals of valuables</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384585</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484522">
+                    <ns12:Name>Imports of goods and services</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384587</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384586</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484523">
+                    <ns12:Name>Exports of goods and services</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384589</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384588</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484524">
+                    <ns12:Name>External Balance of Goods and Services</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384590</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+                <ns12:Category id="9484525">
+                    <ns12:Name>Domestic Demand including stocks</ns12:Name>
+                    <ns12:DataflowRef>
+                        <ns12:AgencyID>ECB</ns12:AgencyID>
+                        <ns12:DataflowID>9384591</ns12:DataflowID>
+                        <ns12:Version>1.0</ns12:Version>
+                    </ns12:DataflowRef>
+                </ns12:Category>
+            </ns12:Category>
+            <ns12:Category id="2120797">
+                <ns12:Name>Value added by economic activity</ns12:Name>
+                <ns12:DataflowRef>
+                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                    <ns12:DataflowID>2136625</ns12:DataflowID>
+                    <ns12:Version>1.0</ns12:Version>
+                </ns12:DataflowRef>
+            </ns12:Category>
+            <ns12:Category id="2120798">
+                <ns12:Name>Capital stock, wealth</ns12:Name>
+                <ns12:DataflowRef>
+                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                    <ns12:DataflowID>2034490</ns12:DataflowID>
+                    <ns12:Version>1.0</ns12:Version>
+                </ns12:DataflowRef>
+            </ns12:Category>
+            <ns12:Category id="2120799">
+                <ns12:Name>Industrial production</ns12:Name>
+                <ns12:DataflowRef>
+                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                    <ns12:DataflowID>2136626</ns12:DataflowID>
+                    <ns12:Version>1.0</ns12:Version>
+                </ns12:DataflowRef>
+            </ns12:Category>
+            <ns12:Category id="2120800">
+                <ns12:Name>Industrial new orders and turnover and retail sales</ns12:Name>
+                <ns12:DataflowRef>
+                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                    <ns12:DataflowID>2034427</ns12:DataflowID>
+                    <ns12:Version>1.0</ns12:Version>
+                </ns12:DataflowRef>
+            </ns12:Category>
+            <ns12:Category id="2120801">
+                <ns12:Name>Passenger car registrations</ns12:Name>
+                <ns12:DataflowRef>
+                    <ns12:AgencyID>ECB</ns12:AgencyID>
+                    <ns12:DataflowID>2136627</ns12:DataflowID>
+                    <ns12:Version>1.0</ns12:Version>
+                </ns12:DataflowRef>
+            </ns12:Category>
+        </ns12:Category>
+        <ns12:Category id="2018808">
+            <ns12:Name>Labour market indicators</ns12:Name>
+            <ns12:Category id="2120802">
+            <ns12:Name>Employment </ns12:Name>
+            <ns12:Category id="9484526">
+            <ns12:Name>Total Employment</ns12:Name>
+            <ns12:DataflowRef>
+                <ns12:AgencyID>ECB</ns12:AgencyID>
+                <ns12:DataflowID>9384592</ns12:DataflowID>
+                <ns12:Version>1.0</ns12:Version>
+            </ns12:DataflowRef>
+        </ns12:Category>
+        <ns12:Category id="9484527">
+            <ns12:Name>Self Employment</ns12:Name>
+            <ns12:DataflowRef>
+                <ns12:AgencyID>ECB</ns12:AgencyID>
+                <ns12:DataflowID>9384593</ns12:DataflowID>
+                <ns12:Version>1.0</ns12:Version>
+            </ns12:DataflowRef>
+        </ns12:Category>
+        <ns12:Category id="9484528">
+            <ns12:Name>Employees</ns12:Name>
+            <ns12:DataflowRef>
+                <ns12:AgencyID>ECB</ns12:AgencyID>
+                <ns12:DataflowID>9384594</ns12:DataflowID>
+                <ns12:Version>1.0</ns12:Version>
+            </ns12:DataflowRef>
+        </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2120805">
+        <ns12:Name>Unemployment </ns12:Name>
+        <ns12:DataflowRef>
+            <ns12:AgencyID>ECB</ns12:AgencyID>
+            <ns12:DataflowID>2034429</ns12:DataflowID>
+            <ns12:Version>1.0</ns12:Version>
+        </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120804">
+        <ns12:Name>Labour productivity </ns12:Name>
+        <ns12:DataflowRef>
+            <ns12:AgencyID>ECB</ns12:AgencyID>
+            <ns12:DataflowID>2034491</ns12:DataflowID>
+            <ns12:Version>1.0</ns12:Version>
+        </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120803">
+        <ns12:Name>Population </ns12:Name>
+        <ns12:DataflowRef>
+            <ns12:AgencyID>ECB</ns12:AgencyID>
+            <ns12:DataflowID>2034492</ns12:DataflowID>
+            <ns12:Version>1.0</ns12:Version>
+        </ns12:DataflowRef>
+    </ns12:Category>
+</ns12:Category>
+<ns12:Category id="2120837">
+    <ns12:Name>Surveys</ns12:Name>
+    <ns12:Category id="2971162">
+    <ns12:Name>ECB Survey of Professional Forecasters</ns12:Name>
+    <ns12:DataflowRef>
+        <ns12:AgencyID>ECB</ns12:AgencyID>
+        <ns12:DataflowID>2871271</ns12:DataflowID>
+        <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+</ns12:Category>
+</ns12:Category>
+</ns12:Category>
+<ns12:Category id="2018773">
+<ns12:Name>Money, banking and financial markets</ns12:Name>
+<ns12:Category id="2018810">
+<ns12:Name>Monetary aggregates and counterparts</ns12:Name>
+<ns12:Category id="2120791">
+<ns12:Name>M1 and components</ns12:Name>
+<ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136606</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136605</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136604</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120792">
+    <ns12:Name>M2 and components</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136613</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136612</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136611</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136603</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120793">
+    <ns12:Name>M3 and components</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136610</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136609</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136608</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136607</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2018825">
+    <ns12:Name>Counterparts of M3</ns12:Name>
+    <ns12:Category id="2120794">
+    <ns12:Name>MFI assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136618</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136617</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136616</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136615</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136614</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>6973433</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120795">
+    <ns12:Name>MFI liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136623</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136622</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136621</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136620</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136619</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018811">
+    <ns12:Name>MFI balance sheets</ns12:Name>
+    <ns12:Category id="2018826">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="2019173">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034681</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9138817">
+    <ns12:Name>Estimated MFI loans to NFCs by economic activity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9038793</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019174">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034682</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019177">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034683</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019178">
+    <ns12:Name>Fixed assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034684</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019179">
+    <ns12:Name>Remaining assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034685</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019180">
+    <ns12:Name>Other assets and asset aggregations</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034686</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018827">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="2019190">
+    <ns12:Name>Currency in circulation</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034687</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019191">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034688</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019192">
+    <ns12:Name>Money market funds shares/units</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034689</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019193">
+    <ns12:Name>Debt securities issued</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034690</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019194">
+    <ns12:Name>Capital and reserves</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034691</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019195">
+    <ns12:Name>Remaining liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034692</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019196">
+    <ns12:Name>Other liabilities and aggregations of liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034693</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484613">
+    <ns12:Name>All series</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384739</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2116074">
+    <ns12:Name>MFIs loans, deposits and security holdings by sector </ns12:Name>
+    <ns12:Category id="2116075">
+    <ns12:Name>Governments</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2131892</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2116079">
+    <ns12:Name>Other financial intermediaries </ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2131893</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2116080">
+    <ns12:Name>Insurance corp. and pension funds </ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2131894</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2116081">
+    <ns12:Name>Non-financial corporations </ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2131895</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2116082">
+    <ns12:Name>Households</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2131896</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8257837">
+    <ns12:Name>Credit Institutions balance sheet</ns12:Name>
+    <ns12:Category id="8257838">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="8549725">
+    <ns12:Name>Cash</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449722</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549726">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449723</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549727">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449724</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549728">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449725</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549729">
+    <ns12:Name>Fixed assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449726</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549730">
+    <ns12:Name>Remaining assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449727</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549731">
+    <ns12:Name>Other assets and asset aggregations</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449728</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8257840">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="8549732">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449729</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549733">
+    <ns12:Name>Debt securities issued</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449730</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549734">
+    <ns12:Name>Capital and reserves</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449731</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549735">
+    <ns12:Name>Remaining liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449732</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8549736">
+    <ns12:Name>Other liabilities and aggregations of liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8449733</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8257806">
+    <ns12:Name>Money Market Funds balance sheet</ns12:Name>
+    <ns12:Category id="8257807">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="8257808">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157819</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257809">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157818</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257810">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157817</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257811">
+    <ns12:Name>Holdings of MMF shares/units</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157816</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257812">
+    <ns12:Name>Remaining assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157815</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257813">
+    <ns12:Name>Other assets and asset aggregations</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157814</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8257814">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="8257815">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157813</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257816">
+    <ns12:Name>MMF shares/units issued</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157812</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257817">
+    <ns12:Name>Remaining liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157811</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8257818">
+    <ns12:Name>Other liabilities and aggregations of liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8157810</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="17066">
+    <ns12:Name>Investment funds</ns12:Name>
+    <ns12:Category id="17145">
+    <ns12:Name>Total investment funds</ns12:Name>
+    <ns12:Category id="17146">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005774</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457616</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17154">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005775</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457620</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="17731">
+    <ns12:Name>Equity funds</ns12:Name>
+    <ns12:Category id="17732">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005776</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457622</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17743">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005777</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457623</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="17748">
+    <ns12:Name>Mixed funds</ns12:Name>
+    <ns12:Category id="17749">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005778</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457627</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17758">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005780</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457629</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="71306">
+    <ns12:Name>Bond funds</ns12:Name>
+    <ns12:Category id="71307">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005781</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457624</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="71308">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005782</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457625</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="17764">
+    <ns12:Name>Real estate funds</ns12:Name>
+    <ns12:Category id="17765">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005783</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457632</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17773">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005784</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457635</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8105782">
+    <ns12:Name>Hedge funds</ns12:Name>
+    <ns12:Category id="8105783">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005787</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8105784">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005788</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="17778">
+    <ns12:Name>Other funds</ns12:Name>
+    <ns12:Category id="17779">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005785</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457636</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17787">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005786</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457637</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="17792">
+    <ns12:Name>General public funds (disc.)</ns12:Name>
+    <ns12:Category id="434726">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457638</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="434729">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457639</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="17793">
+    <ns12:Name>Special investors' funds (disc.)</ns12:Name>
+    <ns12:Category id="434728">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457640</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="434730">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>457641</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8105785">
+    <ns12:Name>Open-end funds</ns12:Name>
+    <ns12:Category id="8105786">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005789</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8105787">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005790</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8105788">
+    <ns12:Name>Closed-end funds</ns12:Name>
+    <ns12:Category id="8105789">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005791</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8105790">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8005792</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018780">
+    <ns12:Name>Securities issues</ns12:Name>
+    <ns12:Category id="2018781">
+    <ns12:Name>Debt securities</ns12:Name>
+    <ns12:Category id="17102">
+    <ns12:Name>Outstanding amounts</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>188784</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17103">
+    <ns12:Name>Gross issues</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>188786</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17104">
+    <ns12:Name>Redemptions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>188787</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17105">
+    <ns12:Name>Net issues</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>188788</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17106">
+    <ns12:Name>Growth rates</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>188789</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17107">
+    <ns12:Name>Growth rate indices</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458046</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018782">
+    <ns12:Name>Quoted shares</ns12:Name>
+    <ns12:Category id="17118">
+    <ns12:Name>Outstanding amounts</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458047</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17119">
+    <ns12:Name>Gross issues</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458048</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17120">
+    <ns12:Name>Redemptions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458049</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17121">
+    <ns12:Name>Net issues</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458050</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17122">
+    <ns12:Name>Growth rates</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458051</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="17123">
+    <ns12:Name>Growth rate indices</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458052</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="8989541">
+    <ns12:Name>Financial Markets Survey</ns12:Name>
+    <ns12:Category id="8989113">
+    <ns12:Name>Debt securities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8889102</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8989543">
+    <ns12:Name>Quoted shares</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8889534</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="7082906">
+    <ns12:Name>Short Term European Papers (STEP) </ns12:Name>
+    <ns12:Category id="8113924">
+    <ns12:Name>Yields and spreads above benchmark rates</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8013929</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8113925">
+    <ns12:Name>Volume data</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8013930</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018774">
+    <ns12:Name>MFI interest rate</ns12:Name>
+    <ns12:Category id="2018783">
+    <ns12:Name>MFI interest rate</ns12:Name>
+    <ns12:Category id="9484266">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384188</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484269">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384189</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018894">
+    <ns12:Name>Business volumes</ns12:Name>
+    <ns12:Category id="9484373">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384280</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484375">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384281</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018784">
+    <ns12:Name>Coefficients of cross-country variation</ns12:Name>
+    <ns12:Category id="9484272">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384192</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484273">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384193</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484278">
+    <ns12:Name>Interest rate component of euro area month-to-month level change</ns12:Name>
+    <ns12:Category id="9484274">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384194</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484275">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384195</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484279">
+    <ns12:Name>Weight component of euro area month-to-month level change</ns12:Name>
+    <ns12:Category id="9484276">
+    <ns12:Name>Loans</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384196</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484277">
+    <ns12:Name>Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384197</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018775">
+    <ns12:Name>Market indices</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136671</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="4586742">
+    <ns12:Name>List of monetary financial institutions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>4486914</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="4212924">
+    <ns12:Name>Money market survey</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>4113096</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3570581">
+    <ns12:Name>Yield curve</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3470712</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="71390">
+    <ns12:Name>Consolidated banking data</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>458086</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9138811">
+    <ns12:Name>Survey on the Access to Finance of SMEs</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9038790</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484281">
+    <ns12:Name>Insurance corporations and pension funds</ns12:Name>
+    <ns12:Category id="9484284">
+    <ns12:Name>Total insurance corporations and pension funds</ns12:Name>
+    <ns12:Category id="9484285">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="9484286">
+    <ns12:Name>Total assets</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484289">
+    <ns12:Name>Total financial assets</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484290">
+    <ns12:Name>Currency and Deposits</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484291">
+    <ns12:Name>Loans</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484292">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484293">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484294">
+    <ns12:Name>MMF and non-MMF Investment fund shares/units</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484295">
+    <ns12:Name>Prepayment of insurance premiums and reserves for outstanding claims</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484296">
+    <ns12:Name>Other accounts receivable/payable and financial derivatives</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484297">
+    <ns12:Name>Non-financial assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384209</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484299">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="9484300">
+    <ns12:Name>Total liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384210</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484301">
+    <ns12:Name>Loans received</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484302">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484303">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384213</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484304">
+    <ns12:Name>Insurance technical reserves</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484305">
+    <ns12:Name>Other accounts receivable/payable and financial derivatives</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384215</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484306">
+    <ns12:Name>Net worth</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484307">
+    <ns12:Name>Insurance corporations</ns12:Name>
+    <ns12:Category id="9484308">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="9484309">
+    <ns12:Name>Total assets</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484310">
+    <ns12:Name>Total financial assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384218</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484311">
+    <ns12:Name>Currency and Deposits</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484312">
+    <ns12:Name>Loans</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484313">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384221</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484314">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384222</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484315">
+    <ns12:Name>MMF and non-MMF Investment fund shares/units</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384223</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484316">
+    <ns12:Name>Prepayment of insurance premiums and reserves for outstanding claims</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384224</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484317">
+    <ns12:Name>Other accounts receivable/payable and financial derivatives</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484318">
+    <ns12:Name>Non-financial assets</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484319">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="9484320">
+    <ns12:Name>Total liabilities</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484321">
+    <ns12:Name>Loans received</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484322">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484323">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384230</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484324">
+    <ns12:Name>Insurance technical reserves</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384231</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484325">
+    <ns12:Name>Other accounts receivable/payable and financial derivatives</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384232</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484326">
+    <ns12:Name>Net worth</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484327">
+    <ns12:Name>Pension funds</ns12:Name>
+    <ns12:Category id="9484328">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="9484329">
+    <ns12:Name>Total assets</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484331">
+    <ns12:Name>Total financial assets</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484332">
+    <ns12:Name>Currency and Deposits</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384236</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484333">
+    <ns12:Name>Loans</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484334">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484336">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484337">
+    <ns12:Name>MMF and non-MMF Investment fund shares/units</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484338">
+    <ns12:Name>Prepayment of insurance premiums and reserves for outstanding claims</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484339">
+    <ns12:Name>Other accounts receivable/payable and financial derivatives</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484340">
+    <ns12:Name>Non-financial assets</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484341">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="9484343">
+    <ns12:Name>Total liabilities</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484344">
+    <ns12:Name>Loans received</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484345">
+    <ns12:Name>Securities other than shares</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484346">
+    <ns12:Name>Shares and other equity</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484347">
+    <ns12:Name>Insurance technical reserves</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484348">
+    <ns12:Name>Other accounts receivable/payable and financial derivatives</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484349">
+    <ns12:Name>Net worth</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484387">
+    <ns12:Name>Structural Financial Indicators</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484280">
+    <ns12:Name>Financial Vehicle Corporations</ns12:Name>
+    <ns12:Category id="9484282">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384198</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484283">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384199</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484572">
+    <ns12:Name>Bank Lending Survey</ns12:Name>
+    <ns12:Category id="9484573">
+    <ns12:Name>Supply</ns12:Name>
+    <ns12:Category id="9484576">
+    <ns12:Name>Enterprises</ns12:Name>
+    <ns12:Category id="9484583">
+    <ns12:Name>Q1, Q6 Credit standards</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484584">
+    <ns12:Name>Q2 Factors</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484585">
+    <ns12:Name>Q3 Terms and conditions</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484577">
+    <ns12:Name>House purchase</ns12:Name>
+    <ns12:Category id="9484586">
+    <ns12:Name>Q8a, Q16a Credit standards</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484587">
+    <ns12:Name>Q9 Factors</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484588">
+    <ns12:Name>Q10 Terms and conditions</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484578">
+    <ns12:Name>Consumer credit</ns12:Name>
+    <ns12:Category id="9484589">
+    <ns12:Name>Q8b, Q16b Credit standards</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484590">
+    <ns12:Name>Q11 Factors</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484591">
+    <ns12:Name>Q12 Terms and conditions</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484574">
+    <ns12:Name>Demand</ns12:Name>
+    <ns12:Category id="9484579">
+    <ns12:Name>Enterprises</ns12:Name>
+    <ns12:Category id="9484592">
+    <ns12:Name>Q4, Q7 Demand</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484593">
+    <ns12:Name>Q5 Factors</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484580">
+    <ns12:Name>House purchase</ns12:Name>
+    <ns12:Category id="9484594">
+    <ns12:Name>Q13a, Q17a Demand</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484595">
+    <ns12:Name>Q14 Factors</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484581">
+    <ns12:Name>Consumer credit</ns12:Name>
+    <ns12:Category id="9484596">
+    <ns12:Name>Q13b, Q17b Demand</ns12:Name>
+    </ns12:Category>
+    <ns12:Category id="9484597">
+    <ns12:Name>Q15 Factors</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484575">
+    <ns12:Name>Ad-hoc</ns12:Name>
+    <ns12:Category id="9484582">
+    <ns12:Name>Q111 Funding</ns12:Name>
+    <ns12:Category id="9484598">
+    <ns12:Name>Access to funding (2007-2009)</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384729</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484609">
+    <ns12:Name>Change in access to funding (2010 - onwards)</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384735</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2019181">
+    <ns12:Name>Euro area accounts</ns12:Name>
+    <ns12:Category id="2019182">
+    <ns12:Name>Non-financial flows (transactions and other changes)</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3343121</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019183">
+    <ns12:Name>Financial flows (transactions and other changes)</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3343122</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2019184">
+    <ns12:Name>Financial balance sheets and non-financial assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3343123</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484760">
+    <ns12:Name>Main indicators</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384872</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485560">
+    <ns12:Name>Government finance</ns12:Name>
+    <ns12:Category id="9485561">
+    <ns12:Name>Revenue</ns12:Name>
+    <ns12:Category id="9485562">
+    <ns12:Name>Total revenue</ns12:Name>
+    <ns12:Category id="9485563">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386099</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386098</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485564">
+    <ns12:Name>Current revenue</ns12:Name>
+    <ns12:Category id="9485565">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386101</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386100</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485566">
+    <ns12:Name>By component</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386107</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386106</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386105</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386104</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386103</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386102</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485567">
+    <ns12:Name>Capital revenue</ns12:Name>
+    <ns12:Category id="9485568">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386109</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386108</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485569">
+    <ns12:Name>By component</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386111</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386110</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485570">
+    <ns12:Name>Fiscal burden</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386113</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386112</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485571">
+    <ns12:Name>Expenditure</ns12:Name>
+    <ns12:Category id="9485572">
+    <ns12:Name>Total expenditure</ns12:Name>
+    <ns12:Category id="9485573">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386115</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386114</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485574">
+    <ns12:Name>By componentl</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386119</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386118</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386117</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386116</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485575">
+    <ns12:Name>Current expenditure</ns12:Name>
+    <ns12:Category id="9485576">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386121</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386120</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485577">
+    <ns12:Name>By component</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386127</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386126</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386125</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386124</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386123</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386122</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485578">
+    <ns12:Name>Capital expenditure</ns12:Name>
+    <ns12:Category id="9485579">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386129</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386128</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485580">
+    <ns12:Name>By component</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386134</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386133</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386132</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386131</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386130</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485581">
+    <ns12:Name>Primary expenditure</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386135</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485582">
+    <ns12:Name>Deficit/surplus and consumption</ns12:Name>
+    <ns12:Category id="9485583">
+    <ns12:Name>Deficit/surplus</ns12:Name>
+    <ns12:Category id="9485584">
+    <ns12:Name>EDP deficit/surplus</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386138</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386137</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386136</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485585">
+    <ns12:Name>ESA deficit/surplus</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386140</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386139</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485586">
+    <ns12:Name>Primary deficit</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386142</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386141</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485587">
+    <ns12:Name>Interest payable</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386144</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386143</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485588">
+    <ns12:Name>Impact of UMTS proceeds</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386146</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386145</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485589">
+    <ns12:Name>Gross saving</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386148</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386147</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485590">
+    <ns12:Name>Consumption</ns12:Name>
+    <ns12:Category id="9485591">
+    <ns12:Name>Final consumption</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386150</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386149</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485592">
+    <ns12:Name>Individual consumption</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386151</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485593">
+    <ns12:Name>Collective consumption</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386152</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485594">
+    <ns12:Name>Consumption by component</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386156</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386155</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386154</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386153</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485595">
+    <ns12:Name>EU budget transactions</ns12:Name>
+    <ns12:Category id="9485596">
+    <ns12:Name>Payments by Member State to EU Commission</ns12:Name>
+    <ns12:Category id="9485597">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386157</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485598">
+    <ns12:Name>By component</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386159</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386158</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485599">
+    <ns12:Name>EU expenditure in Member State </ns12:Name>
+    <ns12:Category id="9485600">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386160</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485601">
+    <ns12:Name>By component</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386164</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386163</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386162</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386161</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485602">
+    <ns12:Name>Member State net receipts from EU Budget</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386165</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485603">
+    <ns12:Name>Government debt</ns12:Name>
+    <ns12:Category id="9485604">
+    <ns12:Name>Gross government debt (consolidated)</ns12:Name>
+    <ns12:Category id="9485605">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386168</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386167</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386166</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485606">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386171</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386170</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386169</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485607">
+    <ns12:Name>By holder</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386172</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485608">
+    <ns12:Name>By issuer</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386176</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386175</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386174</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386173</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485609">
+    <ns12:Name>By original maturity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386177</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485610">
+    <ns12:Name>By residual maturity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386179</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386178</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485611">
+    <ns12:Name>By currency</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386180</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485612">
+    <ns12:Name>Non-consolidated debt</ns12:Name>
+    <ns12:Category id="9485613">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386181</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485614">
+    <ns12:Name>By issuer</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386185</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386184</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386183</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386182</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485615">
+    <ns12:Name>Debt holdings</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386189</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386188</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386187</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386186</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485616">
+    <ns12:Name>Consolidating elements</ns12:Name>
+    <ns12:Category id="9485617">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386190</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485618">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386191</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485619">
+    <ns12:Name>Change in debt</ns12:Name>
+    <ns12:Category id="9485620">
+    <ns12:Name>Change in debt</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386193</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386192</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485621">
+    <ns12:Name>Deficit-debt adjustment</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386195</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386194</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485622">
+    <ns12:Name>Main transactions in financial assets</ns12:Name>
+    <ns12:Category id="9485623">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386196</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485624">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386199</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386198</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386197</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485625">
+    <ns12:Name>Valuations effects and other changes in volume</ns12:Name>
+    <ns12:Category id="9485626">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386201</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386200</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485627">
+    <ns12:Name>Valuation effects on debt</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386203</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386202</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485628">
+    <ns12:Name>Other changes in volume of debt</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386204</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485629">
+    <ns12:Name>Other deficit-debt adjustments</ns12:Name>
+    <ns12:Category id="9485630">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386206</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386205</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485631">
+    <ns12:Name>Adjustment between financial and non-financial accounts</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386208</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386207</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485632">
+    <ns12:Name>Transactions in other assets and liabilities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386213</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386212</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386211</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386210</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386209</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485633">
+    <ns12:Name>Borrowing requirement</ns12:Name>
+    <ns12:Category id="9485634">
+    <ns12:Name>Consolidated transactions</ns12:Name>
+    <ns12:Category id="9485635">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386214</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485636">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386217</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386216</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386215</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485637">
+    <ns12:Name>By currency</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386218</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485638">
+    <ns12:Name>By original maturity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386219</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485639">
+    <ns12:Name>Non-consolidated transactions</ns12:Name>
+    <ns12:Category id="9485640">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386220</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485641">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386222</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386221</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485642">
+    <ns12:Name>Consolidating elements</ns12:Name>
+    <ns12:Category id="9485643">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386223</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485644">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386224</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485645">
+    <ns12:Name>Financial accounts</ns12:Name>
+    <ns12:Category id="9485646">
+    <ns12:Name>Transactions</ns12:Name>
+    <ns12:Category id="9485647">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="9485648">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386225</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485649">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386228</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386227</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386226</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485650">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="9485651">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386229</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485652">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386232</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386231</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386230</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485653">
+    <ns12:Name>Net transactions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386234</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386233</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485654">
+    <ns12:Name>Positions</ns12:Name>
+    <ns12:Category id="9485655">
+    <ns12:Name>Assets</ns12:Name>
+    <ns12:Category id="9485656">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386235</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485657">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386236</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485658">
+    <ns12:Name>Liabilities</ns12:Name>
+    <ns12:Category id="9485659">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386237</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9485660">
+    <ns12:Name>By financial instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386238</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9485661">
+    <ns12:Name>Net positions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9386239</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018778">
+    <ns12:Name>External transactions and positions</ns12:Name>
+    <ns12:Category id="2018790">
+    <ns12:Name>Balance of payments</ns12:Name>
+    <ns12:Category id="2120814">
+    <ns12:Name>Current and capital  account</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384741</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136642</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136645</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136644</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136643</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136646</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136654</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>6973431</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120817">
+    <ns12:Name>Financial account</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384743</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384742</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136650</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136657</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>6973432</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018791">
+    <ns12:Name>External trade in goods</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034480</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2018792">
+    <ns12:Name>International investment position</ns12:Name>
+    <ns12:Category id="2120816">
+    <ns12:Name>Financial account (Total)</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136669</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120819">
+    <ns12:Name>Direct investment</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136659</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136660</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120822">
+    <ns12:Name>Portfolio investment</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136661</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136662</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120823">
+    <ns12:Name>Financial derivatives</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136665</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120826">
+    <ns12:Name>Other investment</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136663</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136664</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2120827">
+    <ns12:Name>Reserve assets</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2136667</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="8836475">
+    <ns12:Name>Gross external debt</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>8736466</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018793">
+    <ns12:Name>International reserves</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034481</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484831">
+    <ns12:Name>Selected items for EU country data</ns12:Name>
+    <ns12:Category id="9484832">
+    <ns12:Name>ST1 - Country Data</ns12:Name>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018779">
+    <ns12:Name>Exchange rates</ns12:Name>
+    <ns12:Category id="2018794">
+    <ns12:Name>Bilateral</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034483</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2018795">
+    <ns12:Name>Effective</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2034482</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="6374972">
+    <ns12:Name>Harmonised competitiveness indicators</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>6275201</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>6275202</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>6275203</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>6275204</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9391627</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484533">
+    <ns12:Name>Trade weights</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384602</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2745">
+    <ns12:Name>Payments and securities trading, clearing, settlement</ns12:Name>
+    <ns12:Category id="2746">
+    <ns12:Name>Payments</ns12:Name>
+    <ns12:Category id="3447413">
+    <ns12:Name>Transactions per type of payment instrument</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3588961</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384545</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384279</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384551</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384552</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447414">
+    <ns12:Name>Transactions per type of terminal</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3588962</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384549</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384550</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384553</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384554</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384555</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447411">
+    <ns12:Name>Payment card functions </ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3588963</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447412">
+    <ns12:Name>Payment card accepting devices </ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3588964</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447416">
+    <ns12:Name>Payments processed by selected IFTS</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3831511</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384546</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384547</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384556</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384558</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384559</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384560</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384561</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384562</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384563</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384564</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384565</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447415">
+    <ns12:Name>Participation in selected IFTS</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3588968</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384566</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384567</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384568</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447406">
+    <ns12:Name>Settlement media used by non-MFIs</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3588969</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384569</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384570</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384571</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384573</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384575</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447407">
+    <ns12:Name>Settlement media used by credit institutions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384278</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447409">
+    <ns12:Name>Institutions offering payment services to non-MFIs</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3588971</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="3447408">
+    <ns12:Name>Banknotes</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>3831512</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212911">
+    <ns12:Name>Securities trading</ns12:Name>
+    <ns12:Category id="4212920">
+    <ns12:Name>Number of participants </ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>4113085</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="4212921">
+    <ns12:Name>Number of listed securities</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>4113086</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="4212922">
+    <ns12:Name>Market capitalisation of listed companies</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>4113087</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="4212923">
+    <ns12:Name>Executed trades</ns12:Name>
+    <ns12:Category id="9484670">
+    <ns12:Name>Number of executed trades</ns12:Name>
+    <ns12:Category id="9484672">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384791</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484673">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384792</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484674">
+    <ns12:Name>Electronic order book transactions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384793</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484675">
+    <ns12:Name>Negotiated deals</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384794</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484671">
+    <ns12:Name>Value of executed trades</ns12:Name>
+    <ns12:Category id="9484676">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384795</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484677">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384796</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484678">
+    <ns12:Name>Electronic order book transactions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384797</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484679">
+    <ns12:Name>Negotiated deals</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384798</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212912">
+    <ns12:Name>Securities clearing</ns12:Name>
+    <ns12:Category id="4212913">
+    <ns12:Name>Clearing members</ns12:Name>
+    <ns12:Category id="9484614">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384744</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484615">
+    <ns12:Name>Domestic</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384745</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484616">
+    <ns12:Name>Non-Domestic EU</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384746</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484617">
+    <ns12:Name>Non-Domestic non-EU</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384747</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212914">
+    <ns12:Name>Non-OTC derivatives contracts </ns12:Name>
+    <ns12:Category id="9484618">
+    <ns12:Name>Number of contracts cleared</ns12:Name>
+    <ns12:Category id="9484619">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384748</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484620">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384749</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484621">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384750</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484622">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384751</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484623">
+    <ns12:Name>Value of contracts cleared</ns12:Name>
+    <ns12:Category id="9484624">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384752</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484625">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384753</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484626">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384754</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484627">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384755</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212915">
+    <ns12:Name>OTC derivatives transactions </ns12:Name>
+    <ns12:Category id="9484628">
+    <ns12:Name>Number of OTC transactions cleared</ns12:Name>
+    <ns12:Category id="9484630">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384756</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484631">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384757</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484632">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384758</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484633">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384759</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484629">
+    <ns12:Name>Value of OTC transactions cleared</ns12:Name>
+    <ns12:Category id="9484634">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384760</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484635">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384761</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484636">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384762</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484637">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384763</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212916">
+    <ns12:Name>Repo transactions </ns12:Name>
+    <ns12:Category id="9484638">
+    <ns12:Name>Number of repo transactions cleared</ns12:Name>
+    <ns12:Category id="9484640">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384764</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484641">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384765</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484642">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384766</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484643">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384767</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484639">
+    <ns12:Name>Value of repo transactions cleared</ns12:Name>
+    <ns12:Category id="9484644">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384768</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484645">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384769</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484646">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384770</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484647">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384771</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212917">
+    <ns12:Name>Cash securities transactions</ns12:Name>
+    <ns12:Category id="9484648">
+    <ns12:Name>Number of cash transactions cleared</ns12:Name>
+    <ns12:Category id="9484650">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384772</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484651">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384773</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484652">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384774</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484653">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384775</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484649">
+    <ns12:Name>Value of cash transactions cleared</ns12:Name>
+    <ns12:Category id="9484654">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384776</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484655">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384777</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484656">
+    <ns12:Name>Payment denominated in EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384778</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484657">
+    <ns12:Name>Payment denominated in other currencies than EUR</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384779</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212918">
+    <ns12:Name>Contracts/ transactions cleared through a clearing link</ns12:Name>
+    <ns12:Category id="9484658">
+    <ns12:Name>Number of contracts/transactions cleared</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384780</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484659">
+    <ns12:Name>Value of contracts/transactions cleared</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384781</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="4212919">
+    <ns12:Name>Securities transfers for settlement of cleared transactions</ns12:Name>
+    <ns12:Category id="9484660">
+    <ns12:Name>Number of securities transfers</ns12:Name>
+    <ns12:Category id="9484662">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384782</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484663">
+    <ns12:Name>Total number of securities transfers</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384783</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484664">
+    <ns12:Name>Transfers from an account of the reporting CCP to an account of a clearing member or vice versa</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384784</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484665">
+    <ns12:Name>Transfers from the account of one clearing member directly to the account of another clearing member (no account of the CCP involved)</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384785</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484661">
+    <ns12:Name>Value of securities transfers</ns12:Name>
+    <ns12:Category id="9484666">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384786</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484667">
+    <ns12:Name>Total number of securities transfers</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384787</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484668">
+    <ns12:Name>Transfers from an account of the reporting CCP to an account of a clearing member or vice versa</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384788</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484669">
+    <ns12:Name>Transfers from the account of one clearing member directly to the account of another clearing member (no account of the CCP involved)</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384789</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2018796">
+    <ns12:Name>Securities settlements</ns12:Name>
+    <ns12:Category id="2517702">
+    <ns12:Name>Direct participants</ns12:Name>
+    <ns12:Category id="9484570">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384710</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484568">
+    <ns12:Name>Domestic</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384711</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484569">
+    <ns12:Name>Non-Domestic</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384712</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2517703">
+    <ns12:Name>Securities held on CSD accounts</ns12:Name>
+    <ns12:Category id="9484680">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384799</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484681">
+    <ns12:Name>Total value of securities held</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384800</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484682">
+    <ns12:Name>Value of securities issued or safe-kept</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384801</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484683">
+    <ns12:Name>Value of securities transferred into the reporting CSD through a link</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384802</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484684">
+    <ns12:Name>Value of securities on an account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384803</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484685">
+    <ns12:Name>Value of securities on an account of participants other than CSDs</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384804</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2517704">
+    <ns12:Name>Delivery instructions</ns12:Name>
+    <ns12:Category id="9484686">
+    <ns12:Name>Number of delivery instructions processed</ns12:Name>
+    <ns12:Category id="9484688">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384805</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484689">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384806</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484690">
+    <ns12:Name>Internal transfer, neither of the accounts involved being a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384807</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484691">
+    <ns12:Name>Internal transfer, where at least one of the accounts involved is a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384808</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484692">
+    <ns12:Name>Transfer through an account of the reporting CSD with (link of the reporting CSD to) another entity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384809</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484687">
+    <ns12:Name>Value of delivery instructions processed</ns12:Name>
+    <ns12:Category id="9484693">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384810</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484694">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384811</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484695">
+    <ns12:Name>Internal transfer, neither of the accounts involved being a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384812</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484696">
+    <ns12:Name>Internal transfer, where at least one of the accounts involved is a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384813</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484697">
+    <ns12:Name>Transfer through an account of the reporting CSD with (link of the reporting CSD to) another entity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384814</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484698">
+    <ns12:Name>Delivery instructions processed on an account of a CCP with the CSD</ns12:Name>
+    <ns12:Category id="9484699">
+    <ns12:Name>Number of delivery instructions processed</ns12:Name>
+    <ns12:Category id="9484701">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384815</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484702">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384816</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484703">
+    <ns12:Name>Internal transfer, neither of the accounts involved being a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384817</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484704">
+    <ns12:Name>Internal transfer, where at least one of the accounts involved is a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384818</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484705">
+    <ns12:Name>Transfer through an account of the reporting CSD with (link of the reporting CSD to) another entity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384819</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484700">
+    <ns12:Name>Value of delivery instructions processed</ns12:Name>
+    <ns12:Category id="9484706">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384820</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484707">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384821</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484708">
+    <ns12:Name>Internal transfer, neither of the accounts involved being a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384822</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484709">
+    <ns12:Name>Internal transfer, where at least one of the accounts involved is a link account of another CSD</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384823</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484710">
+    <ns12:Name>Transfer through an account of the reporting CSD with (link of the reporting CSD to) another entity</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384824</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="2517705">
+    <ns12:Name>New issues and redemptions</ns12:Name>
+    <ns12:Category id="9484711">
+    <ns12:Name>Number of new issues and redemptions</ns12:Name>
+    <ns12:Category id="9484713">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384829</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484714">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384830</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484715">
+    <ns12:Name>Number of new issues</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384831</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484716">
+    <ns12:Name>Number of redemptions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384832</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="9484712">
+    <ns12:Name>Value of new issues and redemptions</ns12:Name>
+    <ns12:Category id="9484717">
+    <ns12:Name>All</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384825</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484718">
+    <ns12:Name>Total</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384826</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484719">
+    <ns12:Name>Value of new issues</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384827</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484720">
+    <ns12:Name>Value of redemptions</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384828</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:Category>
+    <ns12:Category id="5274891">
+    <ns12:Name>Banknotes and Coins</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>5175125</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="2018817">
+    <ns12:Name>Indicators of financial integration </ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>2235842</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    <ns12:Category id="9484612">
+    <ns12:Name>Real Time Database (research database) </ns12:Name>
+    <ns12:Category id="4843526">
+    <ns12:Name>RTD - Data</ns12:Name>
+    <ns12:DataflowRef>
+    <ns12:AgencyID>ECB</ns12:AgencyID>
+    <ns12:DataflowID>9384738</ns12:DataflowID>
+    <ns12:Version>1.0</ns12:Version>
+    </ns12:DataflowRef>
+    </ns12:Category>
+    </ns12:Category>
+    </ns12:CategoryScheme>
+    </ns4:CategorySchemes>
+    </ns4:Structure>
+    </out>
+    </ns3:GetCategorySchemeResponse>
+  </S:Body>
+</S:Envelope>

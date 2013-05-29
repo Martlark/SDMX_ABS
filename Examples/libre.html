@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ABS url call tester</title>
+
+  <style>
+     .bigbox {
+      width: 100%; height: 650px; padding: 5px; overflow: auto;
+      border: solid 2px #AAAAAA; background-color: #FFFFFF;
+    }
+  </style>
+
+  <script>
+	
+	function call_text_ws()
+	{
+		document.getElementById('content').value = '';
+		
+		var url = document.getElementById( 'url' ).value;
+		
+		var xmlhttp = new XMLHttpRequest();
+		
+		document.getElementById("content").value = "";
+		//dojo.removeClass(document.getElementById("content"), "failure");
+
+		console.log( url );
+		try{
+		    xmlhttp.open('GET', url, false);
+		    xmlhttp.send();
+        }catch( err )
+        {
+            document.getElementById("content").value = "Error post: " + url + " " + err.message;
+    		return false;
+        }
+        
+    	console.log( 'xmlhttp.status = ' + xmlhttp.status );
+
+		if (xmlhttp.status == 200) {
+			console.log( 'call finished correctly' );
+		}
+	    document.getElementById('content').value = xmlhttp.responseText;				
+	}
+
+	</script>
+</head>
+<body style="font-family: Arial Unicode MS,Arial,sans-serif;">
+  <p>
+    ABS url call tester
+  </p>
+  <p>
+    Enter URL here: <input type="text" id="url" size="75" value='http://wigglytuff/sdmxws/sdmx.asmx?wsdl' />
+    <input type="button" value="Submit" onclick="call_text_ws();" />
+  </p>
+  <p>
+    <p>URL Call result:</p>
+    <textarea id="content" class='bigbox'></textarea>
+  </p>
+</body>
+</html>

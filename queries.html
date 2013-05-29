@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="pages.css">
+        <title>SDMX Stored Queries</title>
+        <!--#head.html#-->
+        <script>
+            dojo.ready(function() {
+                initStoredQueries();
+            });
+        </script>
+    </head>
+    <body class="claro">
+        <!--#navigation.html#-->
+        <h1>SDMX Stored Queries</h1>
+        <input type='button' id='deleteButton'
+               value='Delete Selected...'
+               onclick='confirmDialog("confirm delete", "Do you really want to delete these items", deleteSelectedStoredQueries);'/>
+        <input type='button' id='updateButton'
+               value='Update'
+               onclick='updateStoredQueries();'/>
+        <div id='grid'></div>
+    </body>
+</html>

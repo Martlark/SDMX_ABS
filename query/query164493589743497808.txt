@@ -1,0 +1,6 @@
+title=Perth region building approvals
+name=Perth region building approvals
+random={3}
+method=create
+query0={"qAnd":[{"c":"MEASURE","v":"1"},{"c":"SECTOR","v":"9"},{"c":"WORK","v":"1"},{"c":"BUILDING","v":"110"},{"c":"FREQUENCY","v":"M"}],"qOr":[{"c":"REGION","v":"=5????"}],"startTime":"2010-05-07","endTime":"","dataSetId":"BA_SA2","measure":"Total number of dwelling units","frequency":"Monthly"}
+options={"breakField":"REGION","mapLayerId":"SA3","perCapita":false,"map":true,"extent":{"xmax":-26869755.67902691,"ymax":-3607004.9179698275,"ymin":-4035052.2763667935,"xmin":-27236653.414795734,"spatialReference":{"wkid":102100}}}

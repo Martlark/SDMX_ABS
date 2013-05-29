@@ -1,0 +1,2 @@
+This map shows {dataCount} values of {name}. The average is {averageValue}, with {minName} having the minimum value of {minValue}, and
+{maxName} having the {maxValue}.

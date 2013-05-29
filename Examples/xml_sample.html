@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+  <!--The viewport meta tag is used to improve the presentation and behavior of the samples
+    on iOS devices-->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>XML Content</title>
+
+  <style>
+     .bigbox {
+      width: 100%; height: 450px; padding: 5px; overflow: auto;
+      border: solid 2px #AAAAAA; background-color: #FFFFFF;
+      -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;
+      -moz-box-shadow: 0 0 0.5em black; -webkit-box-shadow: 0 0 0.5em black; -o-box-shadow: 0 0 0.5em black; box-shadow: 0 0 0.5em black;
+    }
+     .soapbox {
+      width: 100%; height: 250px; padding: 5px; overflow: auto;
+      border: solid 2px #AAAAAA; background-color: #FFFFFF;
+      -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;
+      -moz-box-shadow: 0 0 0.5em black; -webkit-box-shadow: 0 0 0.5em black; -o-box-shadow: 0 0 0.5em black; box-shadow: 0 0 0.5em black;
+    }
+    .failure { color: red; }
+    #status { font-size: 12px; }
+  </style>
+
+  <script>var dojoConfig = { isDebug: true };</script>
+  <script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/"></script>
+  <script src="soapclient.js"></script>
+  <script>
+    dojo.require("esri.map");
+    dojo.require("dojox.xml.parser");
+
+    dojo.ready(function() {
+	if ( true )
+	{
+      dojo.byId("url").value = 'http://www.webservicex.net/stockquote.asmx'; //"http://stat.abs.gov.au/sdmxws/sdmx.asmx";
+	  dojo.byId('url').value = 'http://sdw-ws.ecb.europa.eu/services/SDMXQuery';
+	  dojo.byId('url').value = 'http://stat.abs.gov.au/sdmxws/sdmx.asmx'
+      //dojo.byId("soap_method").value = 'GetQuote'; // "GetGenericData";
+      dojo.byId("soap_parameter1").value = 'symbol'; // "QueryMessage";
+	  //dojo.byId('soap').value = 'MSFT';
+	  }
+	  else
+	{
+      dojo.byId("url").value = "http://stat.abs.gov.au/sdmxws/sdmx.asmx";
+      //dojo.byId("soap_method").value = "GetGenericData";
+      dojo.byId("soap_parameter1").value = "QueryMessage";
+	  }
+      dojo.byId("content").value = "";
+    });
+	
+    function getContent() {
+      dojo.byId("content").value = "";
+      dojo.removeClass(dojo.byId("content"), "failure");
+      dojo.byId("status").innerHTML = "Downloading...";
+
+      var url = esri.urlToObject(dojo.byId("url").value);
+
+      esri.config.defaults.io.proxyUrl = "proxy.php";
+
+      var requestHandle = esri.request({
+        url: url.path,
+        content: url.query,
+        handleAs: "xml"
+      });
+      requestHandle.then(requestSucceeded, requestFailed);
+    }
+
+    function requestSucceeded(response, io) {
+      console.log("Succeeded: ", response);
+      requestCompleted();
+
+      dojo.byId("content").value = dojox.xml.parser.innerXML(response);
+    }
+
+    function requestFailed(error, io) {
+      console.log("Failed: ", error);
+      dojo.addClass(dojo.byId("content"), "failure");
+      requestCompleted();
+
+      dojo.toJsonIndentStr = "  ";
+      dojo.byId("content").value = dojo.toJson(error, true);
+    }
+
+    function requestCompleted() {
+      dojo.byId("status").innerHTML = "Done.";
+      var reset = function() {
+        dojo.byId("status").innerHTML = "";
+      };
+      setTimeout(reset, 2000);
+    }
+	
+	function call_ws()
+	{
+		dojo.byId('content').value = '';
+		
+		var url = dojo.byId( 'url' ).value;
+		var soap = dojo.byId( 'soap' ).value;
+		var soap_method = document.getElementById('wsdlMethods').value;
+		var soap_parameter1 = dojo.byId( 'soap_parameter1').value;
+		
+		if( soap_method.length <= 0 )
+		{
+			alert( 'read wsdl and select soap method first' );
+			return;
+		}
+		
+		var pl = new SOAPClientParameters();
+		pl.add(soap_parameter1,soap );
+		pl.noToXML = true;
+		SOAPClient.proxy('snip.jsp');
+		SOAPClient.invoke(url, soap_method, pl, true, call_ws_callback);
+		if( SOAPClient.fault )
+			dojo.byId('content').value = SOAPClient.faultText;
+	}
+	
+	function call_ws_callback(soap_response)
+	{
+		console.log( 'call_ws_callback' );
+		dojo.byId('content').value = soap_response;
+		requestCompleted();
+	}
+	
+	function read_wsdl()
+	{
+		var url = dojo.byId( 'url' ).value;
+		var methods;
+		
+		SOAPClient.proxy('proxy.php');
+		methods = SOAPClient.getMethodsFromWsdl(url);
+		// now populate a combo box
+		var tld = new Array('.com', '.net', '.org', '.info', '.biz', '.me');
+		var ln = methods.length;
+		var cb = document.getElementById('wsdlMethods');
+		cb.options = new Array();
+		for (var i=0; i<ln; i++) {
+			 var label = methods[i];
+			 var value = methods[i];
+			 cb.options[cb.options.length] = new Option(label, value);
+		}
+	}
+	function call_text_ws()
+	{
+		dojo.byId('content').value = '';
+		
+		var url = dojo.byId( 'url' ).value;
+		var soap = dojo.byId( 'soap' ).value;
+		
+		soapy_explicit( url, soap,'','content');
+	}
+	function soapy_explicit(url, soapBody, xmlTag, responseId) {
+		var xmlhttp = new XMLHttpRequest();
+		var proxy_url = 'snip.jsp?'+url;
+		
+		dojo.byId("content").value = "";
+		dojo.removeClass(dojo.byId("content"), "failure");
+		dojo.byId("status").innerHTML = "Downloading...";
+
+		console.log( 'calling:'+proxy_url );
+		xmlhttp.open('POST', proxy_url, true);
+
+		// build SOAP request
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4) {
+				if (xmlhttp.status == 200) {
+					console.log( 'soap packet ready' );
+					// responseText
+					//var x = xmlhttp.responseXML.getElementsByTagName(xmlTag);
+					//var s = '';
+					
+					//for( i = 0; i < x.length; i++ )
+					//{
+					//	s+= x[i].childNodes[0].nodeValue;
+					//}
+					dojo.byId(responseId).value = xmlhttp.responseText;				
+				}
+			}
+		}
+		// Send the POST request
+		/*
+		// from wire shark of console.jar
+		
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://stats.oecd.org/OECDStatWS/SDMX/GetGenericData"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+User-Agent: JAX-WS RI 2.1.6 in JDK 6
+Host: stat
+Connection: keep-alive
+		*/
+		xmlhttp.setRequestHeader( 'Content-type', 'text/xml;charset="utf-8"' );
+		xmlhttp.setRequestHeader( 'Soapaction', 'http://stats.oecd.org/OECDStatWS/SDMX/GetGenericData' );
+		xmlhttp.setRequestHeader( 'Accept', 'text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2' );
+		xmlhttp.setRequestHeader( 'Host', 'stat' );
+		xmlhttp.setRequestHeader( 'Connection', 'keep-alive' );
+		xmlhttp.setRequestHeader( 'User-Agent', 'JAX-WS RI 2.1.6 in JDK 6' );
+
+		console.log( 'soap:'+soapBody);
+		xmlhttp.send(soapBody);  
+		requestCompleted();
+	}
+
+	function soapy(url, soapBody, xmlTag, responseId) {
+		var xmlhttp = new XMLHttpRequest();
+		var soapHeader = '<?xml version="1.0" encoding="utf-8"?>\
+ <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" \
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema" \
+                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">\
+   <soap:Body>';
+		var soapFooter = '</soap:Body></soap:Envelope>'
+		var proxy_url = 'proxy.php?'+url;
+		
+		dojo.byId("content").value = "";
+		dojo.removeClass(dojo.byId("content"), "failure");
+		dojo.byId("status").innerHTML = "Downloading...";
+
+		console.log( 'calling:'+proxy_url );
+		xmlhttp.open('POST', proxy_url, true);
+
+		// build SOAP request
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4) {
+				if (xmlhttp.status == 200) {
+					console.log( 'soap packet ready' );
+					// responseText
+					//var x = xmlhttp.responseXML.getElementsByTagName(xmlTag);
+					//var s = '';
+					
+					//for( i = 0; i < x.length; i++ )
+					//{
+					//	s+= x[i].childNodes[0].nodeValue;
+					//}
+					dojo.byId(responseId).value = xmlhttp.responseText;				
+				}
+			}
+		}
+		// Send the POST request
+		xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+		xmlhttp.setRequestHeader( 'SOAPAction', "http://stat.abs.gov.au/sdmxws/sdmx.asmx/GetGenericData" );
+		console.log( 'soap:'+soapHeader+soapBody+soapFooter);
+		xmlhttp.send(soapHeader+soapBody+soapFooter);  
+		requestCompleted();
+	}
+	</script>
+</head>
+<body style="font-family: Arial Unicode MS,Arial,sans-serif;">
+  <p>
+    Using esri.request to download content available in <b>XML</b> format.
+  </p>
+  <p>
+    Enter URL here: <input type="text" id="url" size="75" />
+    <input type="button" value="REST" onclick="getContent();" /><p/>
+    <input type="button" value="Read WSDL" onclick="read_wsdl();" />
+	WSDL Methods <select id='wsdlMethods'></select>
+    SOAP parameter 1 name: <input type="text" id="soap_parameter1" size="25" />
+    <input type="button" value="SOAP" onclick="call_ws();" />
+    <input type="button" value="TEXT SOAP" onclick="call_text_ws();" />
+    <span id="status"></span>
+  </p>
+  <p>
+    <p>Soap parameter 1 value:</p>
+    <textarea id="soap" class='soapbox'><?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><GetGenericData xmlns="http://stats.oecd.org/OECDStatWS/SDMX/"><QueryMessage><message:QueryMessage xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query http://www.sdmx.org/docs/2_0/SDMXQuery.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://www.sdmx.org/docs/2_0/SDMXMessage.xsd">
+	<message:Header xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+		<ID>none</ID>
+		<Test>false</Test>
+		<Truncated>false</Truncated>
+		<Prepared>2012-06-05T16:53:38</Prepared>
+		<Sender id="YourID">
+			<Name xml:lang="en">Your English Name</Name>
+		</Sender>
+		<Receiver id="ABS">
+			<Name xml:lang="en">Australian Bureau of Statistics</Name>
+			<Name xml:lang="fr">Australian Bureau of Statistics</Name>
+		</Receiver>
+	</message:Header>
+	<message:Query xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+		<DataWhere xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query">
+			<And>
+				<DataSet>LF</DataSet>
+				<Dimension id="SEX_ABS">3</Dimension>
+				<Dimension id="AGE">1599</Dimension>
+				<Dimension id="TSEST">20</Dimension>
+				<Dimension id="FREQUENCY">M</Dimension>
+				<Attribute id="TIME_FORMAT">P1M</Attribute>
+				<Time>
+					<StartTime>2000-10</StartTime>
+					<EndTime>2005-10</EndTime>
+				</Time>
+				<Or>
+					<Dimension id="ASGC_2010">0</Dimension>
+					<Dimension id="ASGC_2010">1</Dimension>
+					<Dimension id="ASGC_2010">2</Dimension>
+					<Dimension id="ASGC_2010">3</Dimension>
+					<Dimension id="ASGC_2010">4</Dimension>
+					<Dimension id="ASGC_2010">5</Dimension>
+					<Dimension id="ASGC_2010">6</Dimension>
+					<Dimension id="ASGC_2010">7</Dimension>
+					<Dimension id="ASGC_2010">8</Dimension>
+				</Or>
+				<Or>
+					<Dimension id="ITEM">4</Dimension>
+					<Dimension id="ITEM">13</Dimension>
+					<Dimension id="ITEM">14</Dimension>
+					<Dimension id="ITEM">10</Dimension>
+				</Or>
+			</And>
+		</DataWhere>
+	</message:Query>
+</message:QueryMessage></QueryMessage></GetGenericData></S:Body></S:Envelope></textarea>
+  <p>
+    <p>Content:</p>
+    <textarea id="content" class='bigbox'></textarea>
+  </p>
+</body>
+</html>

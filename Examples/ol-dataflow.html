@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+  <!--The viewport meta tag is used to improve the presentation and behavior of the samples
+    on iOS devices-->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>ECB SDMX Dataflow #id#</title>
+
+  <style>
+  </style>
+
+	<script>var dojoConfig = { isDebug: true };var dataFlowId = '#id#';</script>
+	<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/"></script>
+	<script type="text/javascript" src="jssaxparser/sax.js"></script>
+	<script type="text/javascript" src="jssaxparser/DefaultHandlers.js"></script>
+	<script src="index.js"></script>
+	<script>
+    dojo.require("dojox.xml.parser");
+
+    dojo.ready(function() 
+	{
+		prototypeExtensions();
+		dojo.byId('url').value = 'http://sdw-ws.ecb.europa.eu/services/SDMXQuery';
+		dojo.byId("content").value = "";
+		//call_text_ws();
+    });
+	</script>
+</head>
+<body style="font-family: Arial Unicode MS,Arial,sans-serif;">
+  <p>
+    DataFlow #id# <b>SDMX</b>
+  </p>
+  <p>
+    SDMX web service URL: <input type="text" id="url" size="75" />
+    <input type="button" value="SOAP" onclick="call_text_ws();" />
+    <span id="status"></span>
+  </p>
+  <p>
+ 
+  <p>
+    <textarea id="content" class='bigbox'></textarea>
+	<div id='results'></div>
+  </p>
+</body>
+</html>

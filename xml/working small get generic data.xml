@@ -1,0 +1,33 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:sdmx="http://stats.oecd.org/OECDStatWS/SDMX/">
+	<soap:Body>
+		<GetGenericData xmlns="http://stats.oecd.org/OECDStatWS/SDMX/">
+			<QueryMessage>
+				<message:QueryMessage xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query http://www.sdmx.org/docs/2_0/SDMXQuery.xsdhttp://www.SDMX.org/resources/SDMXML/schemas/v2_0/messagehttp://www.sdmx.org/docs/2_0/SDMXMessage.xsd">
+					<message:Header xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">						
+						<Receiver id="ABS"/>
+					</message:Header>
+					<message:Query xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+						<DataWhere xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query">
+							<And>
+								<DataSet>LF</DataSet>
+								<Dimension id="SEX_ABS">3</Dimension>
+								<Dimension id="AGE">1599</Dimension>
+								<Dimension id="TSEST">20</Dimension>
+								<Dimension id="FREQUENCY">M</Dimension>
+								<Attribute id="TIME_FORMAT">P1M</Attribute>
+								<Time>
+									<StartTime>2004-10</StartTime>
+									<EndTime>2005-10</EndTime>
+								</Time>
+								<Or>
+									<Dimension id="ASGC_2010">0</Dimension>
+									<Dimension id="ITEM">10</Dimension>
+								</Or>
+							</And>
+						</DataWhere>
+					</message:Query>
+				</message:QueryMessage>
+			</QueryMessage>
+		</GetGenericData>
+	</soap:Body>
+</soap:Envelope>
